@@ -26,18 +26,15 @@
           <span>Présentation</span>
         </h1>
       </md-toolbar>
-      <md-content>
-        <md-list layout="row" layout-padding>
-          <md-list-item class="md-3-line" ng-repeat="item in list">
-            <img ng-if="item.face" ng-src="{{ item.face }}?{{ $index }}" alt="{{ item.alt }}">
-            <h2 class="md-list-item-text" ng-bind="item.text"></h2>
-            <md-divider md-inset ng-if="!$last"></md-divider>
-          </md-list-item>
-        </md-list>
+      <md-whiteframe class="md-whiteframe-z3" layout="column" layout-padding layout-align="center start">
+        <md-content layout="row" layout-padding layout-align="start center">
+          <h2>Guillaume Seguin</h2>
+          <h3>Développeur Web</h3>
+        </md-content>
         <md-list layout="row" layout-padding layout-align="start center">
           <md-list-item class="md-3-line" ng-repeat="subItem in subList" ng-click="subItem.onClick" ng-bind="subItem.title"></md-list-item>
         </md-list>
-      </md-content>
+      </md-whiteframe>
     </header>
     <section ng-include="'views/main.html'" ng-controller="MainCtrl"></section>
     <footer></footer>

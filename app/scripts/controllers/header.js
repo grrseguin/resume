@@ -9,16 +9,6 @@
  */
 angular.module('cvApp')
   .controller('HeaderCtrl', function( $scope ){
-    $scope.list = [
-      {
-        face : 'images/avatar.jpg',
-        alt: 'Avatar',
-        text: 'Guillaume Seguin'
-      },
-      {
-        text: 'Développeur Web'
-      }
-    ];
     $scope.subList = [
       {
         title: 'disponible en septembre 2015',

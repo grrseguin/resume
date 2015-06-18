@@ -21,6 +21,6 @@ angular
   .config(['$mdThemingProvider', function( $mdThemingProvider ){
     $mdThemingProvider
       .theme('default')
-      .primaryPalette('grey')
-      .accentPalette('blue');
+      .primaryPalette('blue')
+      .accentPalette('light-blue');
   }]);
