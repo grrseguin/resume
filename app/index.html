@@ -20,38 +20,23 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
+    <header ng-controller="HeaderCtrl">
       <md-toolbar class="md-theme-light">
         <h1 class="md-toolbar-tools">
           <span>Présentation</span>
         </h1>
       </md-toolbar>
       <md-content>
-        <md-list>
-          <md-list-item class="md-3-line" ng-repeat="item in messages">
-            <img ng-src="{{item.face}}?{{$index}}" class="face" alt="{{item.who}}">
-            <div class="md-list-item-text">
-              <h3>{{item.what}}</h3>
-              <h4>{{item.who}}</h4>
-              <p>{{item.notes}}</p>
-            </div>
+        <md-list layout="row" layout-padding>
+          <md-list-item class="md-3-line" ng-repeat="item in list">
+            <img ng-if="item.face" ng-src="{{ item.face }}?{{ $index }}" alt="{{ item.alt }}">
+            <h2 class="md-list-item-text" ng-bind="item.text"></h2>
             <md-divider md-inset ng-if="!$last"></md-divider>
           </md-list-item>
         </md-list>
-      </md-content>
-      <md-content layout="row" layout-padding layout-align="start center">
-        <h2>Guillaume Seguin</h2>
-        <h3>Développeur Web</h3>
-      </md-content>
-      <md-content class="contact">
-        <ul layout="row">
-          <li>disponible en septembre 2015</li>
-          <li>37 ans</li>
-          <li>12 ans d'expérience</li>
-          <li>français</li>
-          <li class="phone"><a href="callto:33687036154">06 87 03 61 54</a></li>
-          <li class="email"><a href="mailto:grrseguin@gmail.com">grrseguin@gmail.com</a></li>
-        </ul>
+        <md-list layout="row" layout-padding layout-align="start center">
+          <md-list-item class="md-3-line" ng-repeat="subItem in subList" ng-click="subItem.onClick" ng-bind="subItem.title"></md-list-item>
+        </md-list>
       </md-content>
     </header>
     <section ng-include="'views/main.html'" ng-controller="MainCtrl"></section>
@@ -81,6 +66,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/header.js"></script>
         <!-- endbuild -->
 </body>
 </html>
