@@ -30,8 +30,8 @@
         </h2>
       </md-toolbar>
       <md-whiteframe class="md-whiteframe-z3" layout="column" layout-padding layout-align="center start">
-        <md-list layout="row" layout-padding layout-align="start center">
-          <md-list-item class="md-3-line" ng-repeat="subItem in subList" ng-click="subItem.onClick" ng-bind="subItem.title"></md-list-item>
+        <md-list layout="row" layout-align="start center" layout-fill layout-wrap>
+          <md-list-item class="md-3-line" ng-repeat="subItem in subList" flex ng-class="subItem.classList" ng-click="subItem.onClick" ng-bind="subItem.title"></md-list-item>
         </md-list>
       </md-whiteframe>
     </header>

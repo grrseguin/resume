@@ -32,6 +32,7 @@ angular.module('cvApp')
       },
       {
         title: 'grrseguin@gmail.com',
+        classList: ['width-fix'],
         onClick: 'mailto:grrseguin@gmail.com'
       }
     ];
