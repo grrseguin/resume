@@ -1,6 +1,5 @@
 // bower:scss
 // endbower
-
 @mixin border-top-radius( $radius ) {
   -webkit-border-top-left-radius: $radius;
      -moz-border-top-left-radius: $radius;
@@ -48,6 +47,10 @@ md-grid-list.technical-skills {
 .technical-skills md-grid-tile {
   transition: all 400ms ease-out 50ms; }
 
+.width-fix{
+  flex-grow: 0;
+  flex-basis: auto;
+}
 
 
 
@@ -140,5 +143,11 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+@media print{
+  .md-whiteframe-z3{
+    background-color: white;
   }
 }
