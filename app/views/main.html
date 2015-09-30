@@ -4,14 +4,70 @@
 <md-button class="md-accent md-hue-1">Click me</md-button>
 <md-button class="md-accent md-hue-2">Click me</md-button>
 <md-button class="md-accent md-hue-3">Click me</md-button>
-<md-content class="md-padding" layout="column">
-  <h2 class="md-title">Javascript</h2>
-  <md-chips>
-    <md-chip>AngularJS</md-chip>
-    <md-chip>lodash</md-chip>
-    <md-chip>D3JS</md-chip>
-  </md-chips>
-  <p class="note">
-    C'est la technologie sur laquelle j'ai fait le plus de progrès dernièrement.
-  </p>
-</md-content>
+<md-grid-list class="technical-skills"
+       md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
+       md-row-height-gt-md="1:1" md-row-height="2:2"
+       md-gutter="12px" md-gutter-gt-sm="8px" >
+  <md-grid-tile ng-repeat="technicalSkill in main.technicalSkills" ng-class="technicalSkill.class" md-rowspan="{{technicalSkill.mdRowspan}}" md-colspan="{{technicalSkill.mdColspan}}" md-colspan-sm="{{technicalSkill.mdColspanSm}}">
+    <md-grid-tile-header>
+      <h3 ng-bind="technicalSkill.head"></h3>
+    </md-grid-tile-header>
+    <md-list-item class="md-2-line contact-item selected" ng-repeat="skill in technicalSkill.list">
+      <img ng-if="skill.image" ng-src="{{skill.image}}" class="md-avatar" alt="{{skill.name}}" />
+      <div class="md-list-item-text compact">
+        <h4 ng-bind="skill.name"></h4>
+        <p ng-if="skill.image" ng-bind="skill.type"></p>
+      </div>
+    </md-list-item>
+    <md-grid-tile-footer>
+      <p ng-bind="technicalSkill.foot"></p>
+    </md-grid-tile-footer>
+  </md-grid-tile>
+</md-grid-list>
+
+
+
+<md-grid-list class="technical-skills"
+       md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
+       md-row-height-gt-md="1:1" md-row-height="2:2"
+       md-gutter="12px" md-gutter-gt-sm="8px" >
+   <md-grid-tile class="gray" md-rowspan="3" md-colspan="2" md-colspan-sm="1">
+    <md-grid-tile-header>
+      <h3>Javascript</h3>
+    </md-grid-tile-header>
+    <md-chips>
+      <md-chip>AngularJS</md-chip>
+      <md-chip>lodash</md-chip>
+      <md-chip>D3JS</md-chip>
+    </md-chips>
+    <md-button class="md-accent md-hue-1">AngularJS</md-button>
+     <md-grid-tile-footer>
+       <h3>C'est la technologie sur laquelle j'ai fait le plus de progrès dernièrement.</h3>
+     </md-grid-tile-footer>
+   </md-grid-tile>
+   <md-grid-tile class="green">
+     <md-grid-tile-footer>
+       <h3>#2: (1r x 1c)</h3>
+     </md-grid-tile-footer>
+   </md-grid-tile>
+   <md-grid-tile class="yellow">
+     <md-grid-tile-footer>
+       <h3>#3: (1r x 1c)</h3>
+     </md-grid-tile-footer>
+   </md-grid-tile>
+   <md-grid-tile class="blue" md-rowspan="2">
+     <md-grid-tile-footer>
+       <h3>#4: (2r x 1c)</h3>
+     </md-grid-tile-footer>
+   </md-grid-tile>
+   <md-grid-tile class="red" md-rowspan="2" md-colspan="2" md-colspan-sm="1">
+     <md-grid-tile-footer>
+       <h3>#5: (2r x 2c)</h3>
+     </md-grid-tile-footer>
+   </md-grid-tile>
+   <md-grid-tile class="green" md-rowspan="2" >
+     <md-grid-tile-footer>
+       <h3>#6: (2r x 1c)</h3>
+     </md-grid-tile-footer>
+   </md-grid-tile>
+ </md-grid-list>
