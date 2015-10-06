@@ -12,13 +12,15 @@
     <md-grid-tile-header>
       <h3 ng-bind="technicalSkill.head"></h3>
     </md-grid-tile-header>
-    <md-list-item class="md-2-line contact-item selected" ng-repeat="skill in technicalSkill.list">
-      <img ng-if="skill.image" ng-src="{{skill.image}}" class="md-avatar" alt="{{skill.name}}" />
-      <div class="md-list-item-text compact">
-        <h4 ng-bind="skill.name"></h4>
-        <p ng-if="skill.image" ng-bind="skill.type"></p>
-      </div>
-    </md-list-item>
+    <md-list>
+      <md-list-item class="md-2-line selected" ng-repeat="skill in technicalSkill.list">
+        <img ng-if="skill.image" ng-src="{{skill.image}}" class="md-avatar" alt="{{skill.name}}" />
+        <div class="md-list-item-text compact">
+          <h4 ng-bind="skill.name"></h4>
+          <p ng-if="skill.image" ng-bind="skill.type"></p>
+        </div>
+      </md-list-item>
+    </md-list>
     <md-grid-tile-footer>
       <p ng-bind="technicalSkill.foot"></p>
     </md-grid-tile-footer>

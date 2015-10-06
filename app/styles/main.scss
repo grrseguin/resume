@@ -51,6 +51,22 @@ md-grid-list.technical-skills {
   flex-grow: 0;
   flex-basis: auto;
 }
+.ts-2-item md-list > md-list-item{
+  float: left;
+  width: 50%;
+}
+.ts-3-item md-list > md-list-item{
+  float: left;
+  width: 33%;
+}
+.ts-4-item md-list > md-list-item{
+  float: left;
+  width: 25%;
+}
+.ts-5-item md-list > md-list-item{
+  float: left;
+  width: 20%;
+}
 
 
 

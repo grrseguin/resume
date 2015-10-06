@@ -11,7 +11,7 @@ angular.module('cvApp')
   .controller('MainCtrl', function(){
     this.technicalSkills = [
       {
-        class: 'gray',
+        class: ['red', 'ts-5-item'],
         mdRowspan: '3',
         mdColspan: '2',
         mdColspanSm: '1',
@@ -21,7 +21,31 @@ angular.module('cvApp')
             name: 'AngularJS'
           },
           {
-            name: 'lodash'
+            name: 'NodeJS'
+          },
+          {
+            name: 'Karma'
+          },
+          {
+            name: 'Protractor'
+          },
+          {
+            name: 'Yeoman'
+          },
+          {
+            name: 'GruntJS'
+          },
+          {
+            name: 'Bower'
+          },
+          {
+            name: 'jQuery'
+          },
+          {
+            name: 'ReactJS'
+          },
+          {
+            name: 'Lodash'
           },
           {
             name: 'D3JS'
