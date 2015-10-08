@@ -164,10 +164,19 @@ angular.module('cvApp')
     ];
     this.jobs = [
       {
+        face: 'https://material.angularjs.org/0.11.2/img/list/60.jpeg',
         what: 'Anagène v3',
         when: 'sept. 2013 / dec. 2015',
-        who: 'aYaline pour CANOPE',
-        notes: 'Comparaison de séquences A.D.N.'
+        who: 'Réseau CANOPE',
+        notes: 'Comparaison de séquences A.D.N. (AngularJS & Typo3)'
+      },
+      {
+        face: 'https://material.angularjs.org/0.11.2/img/list/60.jpeg',
+        what: 'Espace personnel',
+        link: 'http://monespace.mapa-assurances.fr',
+        when: 'sept. 2012 / sept. 2013',
+        who: 'MAPA Assurances',
+        notes: 'Accès personnel aux services MAPA (eZ Publish 5 - symfony 2)'
       }
     ];
   });
