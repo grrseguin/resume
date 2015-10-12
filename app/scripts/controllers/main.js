@@ -11,7 +11,7 @@ angular.module('cvApp')
   .controller('MainCtrl', function(){
     this.technicalSkills = [
       {
-        class: ['red'],
+        class: ['red', 'ts-3-item'],
         mdRowspan: '2',
         mdColspan: '2',
         mdColspanSm: '1',

@@ -57,22 +57,6 @@ md-grid-list.technical-skills {
   flex-grow: 0;
   flex-basis: auto;
 }
-.ts-2-item md-list > md-list-item{
-  float: left;
-  width: 50%;
-}
-.ts-3-item md-list > md-list-item{
-  float: left;
-  width: 33%;
-}
-.ts-4-item md-list > md-list-item{
-  float: left;
-  width: 25%;
-}
-.ts-5-item md-list > md-list-item{
-  float: left;
-  width: 20%;
-}
 
 md-grid-tile md-list > md-list-item.md-2-line .md-list-item-text{
   padding: 0;
@@ -90,7 +74,7 @@ md-grid-tile md-list > md-list-item.md-2-line{
   box-sizing: border-box;
 }
   .contact-item.selected {
-    opacity: 0.5;
+    opacity: 0.8;
   }
     .contact-item.selected h3 {
       opacity: 0.5;
@@ -109,15 +93,23 @@ md-grid-tile md-list > md-list-item.md-2-line{
       overflow: hidden;
     }
   @media (min-width: 900px) {
-    .contact-item {
+    .ts-2-item md-list > md-list-item{
+      float: left;
+      width: 50%;
+    }
+    .ts-3-item md-list > md-list-item{
       float: left;
       width: 33%;
     }
+    .ts-4-item md-list > md-list-item{
+      float: left;
+      width: 25%;
+    }
+    .ts-5-item md-list > md-list-item{
+      float: left;
+      width: 20%;
+    }
   }
-.fixedRows {
-  height: 250px;
-  overflow: hidden;
-}
 
 
 
