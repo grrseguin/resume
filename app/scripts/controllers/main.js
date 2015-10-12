@@ -12,7 +12,7 @@ angular.module('cvApp')
     this.technicalSkills = [
       {
         class: ['red'],
-        mdRowspan: '3',
+        mdRowspan: '2',
         mdColspan: '2',
         mdColspanSm: '1',
         head: 'Javascript',
@@ -70,7 +70,7 @@ angular.module('cvApp')
       },
       {
         class: ['yellow', 'ts-2-item'],
-        mdRowspan: '1',
+        mdRowspan: '2',
         mdColspan: '1',
         mdColspanSm: '2',
         head: 'HTML & CSS',
