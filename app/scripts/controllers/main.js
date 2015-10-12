@@ -11,44 +11,59 @@ angular.module('cvApp')
   .controller('MainCtrl', function(){
     this.technicalSkills = [
       {
-        class: ['red', 'ts-5-item'],
+        class: ['red'],
         mdRowspan: '3',
         mdColspan: '2',
         mdColspanSm: '1',
         head: 'Javascript',
         list: [
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'AngularJS'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'NodeJS'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'Karma'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'Protractor'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'Yeoman'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'GruntJS'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'Bower'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'jQuery'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'ReactJS'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'Lodash'
           },
           {
+            image: 'http://lorempixel.com/50/50/people',
             name: 'D3JS'
+          },
+          {
+            image: 'http://lorempixel.com/50/50/people',
+            name: 'Gmap'
           }
         ],
         foot: 'C\'est la technologie sur laquelle j\'ai fait le plus de progrès dernièrement.'
@@ -64,10 +79,22 @@ angular.module('cvApp')
             name: 'flexbox'
           },
           {
-            name: 'transition'
+            name: 'Compass'
+          },
+          {
+            name: 'CSS3 Media Queries'
+          },
+          {
+            name: 'CSS3 Transitions'
+          },
+          {
+            name: 'CSS3 Box-sizing'
           },
           {
             name: 'localStorage'
+          },
+          {
+            name: 'SVG'
           },
           {
             name: 'WAI-ARIA'
@@ -77,9 +104,6 @@ angular.module('cvApp')
           },
           {
             name: 'XSLT / DTD'
-          },
-          {
-            name: 'Gmap'
           }
         ]
       },

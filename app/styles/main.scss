@@ -74,9 +74,50 @@ md-grid-list.technical-skills {
   width: 20%;
 }
 
+md-grid-tile md-list > md-list-item.md-2-line .md-list-item-text{
+  padding: 0;
+}
+md-grid-tile md-list > md-list-item.md-2-line{
+  min-height: 0;
+}
 
 
-
+.md-item-text.compact {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.contact-item {
+  box-sizing: border-box;
+}
+  .contact-item.selected {
+    opacity: 0.5;
+  }
+    .contact-item.selected h3 {
+      opacity: 0.5;
+    }
+  .contact-item .md-list-item-text {
+    padding: 14px 0;
+  }
+    .contact-item .md-list-item-text h3 {
+      margin: 0 !important;
+      padding: 0;
+      line-height: 1.2em !important;
+    }
+    .contact-item .md-list-item-text h3, .contact-item .md-list-item-text p {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  @media (min-width: 900px) {
+    .contact-item {
+      float: left;
+      width: 33%;
+    }
+  }
+.fixedRows {
+  height: 250px;
+  overflow: hidden;
+}
 
 
 
