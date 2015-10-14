@@ -19,7 +19,7 @@
         <h3 ng-bind="technicalSkill.head"></h3>
       </md-grid-tile-header>
       <md-list>
-        <md-list-item class="contact-item selected" ng-repeat="skill in technicalSkill.list">
+        <md-list-item class="contact-item selected blade" ng-repeat="skill in technicalSkill.list">
           <img ng-if="skill.image" ng-src="{{skill.image}}" class="md-avatar" alt="{{skill.name}}" />
           <div class="md-list-item-text compact">
             <h4 ng-bind="skill.name"></h4>

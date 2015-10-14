@@ -20,6 +20,18 @@
       -ms-border-bottom-right-radius: $radius;
           border-bottom-right-radius: $radius;
 }
+@mixin border-top-left-radius( $radius ) {
+  -webkit-border-top-left-radius: $radius;
+     -moz-border-top-left-radius: $radius;
+      -ms-border-top-left-radius: $radius;
+          border-top-left-radius: $radius;
+}
+@mixin border-bottom-right-radius( $radius ) {
+  -webkit-border-bottom-right-radius: $radius;
+     -moz-border-bottom-right-radius: $radius;
+      -ms-border-bottom-right-radius: $radius;
+          border-bottom-right-radius: $radius;
+}
 .box{
   margin: 0.5em;
   > *:first-child{
@@ -28,6 +40,10 @@
   > *:last-child{
     @include border-bottom-radius(25pt);
   }
+}
+.blade{
+  @include border-top-left-radius(25pt);
+  @include border-bottom-right-radius(25pt);
 }
 .face {
   border-radius: 30px;
@@ -73,15 +89,15 @@ md-grid-tile md-list > md-list-item.md-2-line{
 .contact-item {
   box-sizing: border-box;
 }
+.contact-item.blade {
+  background-color: red;
+}
   .contact-item.selected {
     opacity: 0.8;
   }
     .contact-item.selected h3 {
       opacity: 0.5;
     }
-  .contact-item .md-list-item-text {
-    padding: 14px 0;
-  }
     .contact-item .md-list-item-text h3 {
       margin: 0 !important;
       padding: 0;
