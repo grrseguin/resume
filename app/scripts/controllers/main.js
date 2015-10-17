@@ -186,6 +186,92 @@ angular.module('cvApp')
         ]
       }
     ];
+    this.projectSkills = [
+      {
+        class: ['red'],
+        mdRowspan: '2',
+        mdColspan: '2',
+        mdColspanSm: '1',
+        head: 'Conception',
+        list: [
+          {
+            name: 'Storyboard'
+          },
+          {
+            name: 'Rédaction de spéficifications fonctionnelles détaillées'
+          },
+          {
+            name: 'Diagrammes UML'
+          },
+        ]
+      },
+      {
+        class: ['red'],
+        mdRowspan: '2',
+        mdColspan: '2',
+        mdColspanSm: '1',
+        head: 'Réalisation',
+        list: [
+          {
+            name: 'Zend studios'
+          },
+          {
+            name: 'Netbeans'
+          },
+          {
+            name: 'VIM'
+          }
+        ]
+      },
+      {
+        class: ['red'],
+        mdRowspan: '2,',
+        mdColspan: '2',
+        mdColspanSm: '1',
+        head: 'Recette',
+        list: [
+          {
+            name: 'TCM'
+          },
+          {
+            name: 'Karma'
+          },
+        ]
+      },
+      {
+        class: ['red'],
+        mdRowspan: '2',
+        mdColspan: '2',
+        mdColspanSm: '1',
+        head: 'Déploiement',
+        list: [
+          {
+            name: 'Bamboo atlassian'
+          },
+          {
+            name: 'Jenkins'
+          }
+        ]
+      },
+      {
+        class: ['red'],
+        mdRowspan: '2',
+        mdColspan: '2',
+        mdColspanSm: '1',
+        head: 'Suivi',
+        list: [
+          {
+            name: 'Relation client'
+          },
+          {
+            name: 'Animation de réunion'
+          },
+          {
+            name: 'Suivi des délais/charges'
+          }
+        ]
+      }
+    ];
     this.jobs = [
       {
         face: 'https://material.angularjs.org/0.11.2/img/list/60.jpeg',
