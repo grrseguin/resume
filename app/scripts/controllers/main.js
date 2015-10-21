@@ -195,10 +195,10 @@ angular.module('cvApp')
         head: 'Conception',
         list: [
           {
-            name: 'Storyboard'
+            name: 'Rédaction de spéficifications fonctionnelles détaillées'
           },
           {
-            name: 'Rédaction de spéficifications fonctionnelles détaillées'
+            name: 'Storyboard'
           },
           {
             name: 'Diagrammes UML'
