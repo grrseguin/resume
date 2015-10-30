@@ -29,9 +29,49 @@
     @include border-bottom-radius(25pt);
   }
 }
+.face {
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  width: 48px;
+  margin: 16px;
+}
+md-grid-list.technical-skills {
+  margin: 8px;
+}
+.technical-skills .gray {
+  background: #f5f5f5; }
+.technical-skills .green {
+  background: #b9f6ca; }
+.technical-skills .yellow {
+  background: #ffff8d; }
+.technical-skills .blue {
+  background: #84ffff; }
+.technical-skills .purple {
+  background: #b388ff; }
+.technical-skills .red {
+  background: #ff8a80; }
+.technical-skills md-grid-tile {
+  transition: all 400ms ease-out 50ms; }
+
 .width-fix{
   flex-grow: 0;
   flex-basis: auto;
+}
+.ts-2-item md-list > md-list-item{
+  float: left;
+  width: 50%;
+}
+.ts-3-item md-list > md-list-item{
+  float: left;
+  width: 33%;
+}
+.ts-4-item md-list > md-list-item{
+  float: left;
+  width: 25%;
+}
+.ts-5-item md-list > md-list-item{
+  float: left;
+  width: 20%;
 }
 
 
