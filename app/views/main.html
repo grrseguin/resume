@@ -18,12 +18,12 @@
       <md-grid-tile-header>
         <h3 ng-bind="technicalSkill.head"></h3>
       </md-grid-tile-header>
-      <md-list>
-        <md-list-item ng-repeat="skill in technicalSkill.list">
-          <img ng-if="skill.image" ng-src="{{skill.image}}" class="md-avatar" alt="{{skill.name}}" />
-          <p ng-bind="skill.name"></p>
-        </md-list-item>
-      </md-list>
+      <md-chips ng-model="technicalSkill.list" readonly="true" class="with-icon">
+        <md-chip-template layout="row">
+          <img ng-src="{{$chip.image}}" alt="{{$chip.name}}">
+          <strong ng-bind="$chip.name"></strong>
+        </md-chip-template>
+      </md-chips>
       <md-grid-tile-footer ng-if="technicalSkill.foot">
         <p ng-bind="technicalSkill.foot"></p>
       </md-grid-tile-footer>
@@ -44,9 +44,8 @@
       <md-grid-tile-header>
         <h3 ng-bind="projectSkill.head"></h3>
       </md-grid-tile-header>
-      <md-chips ng-model="projectSkill.list" readonly="true" class="icon">
+      <md-chips ng-model="projectSkill.list" readonly="true">
         <md-chip-template layout="row">
-          <img ng-src="http://lorempixel.com/50/50/people?1" alt="Oddr Sarno">
           <strong ng-bind="$chip.name"></strong>
         </md-chip-template>
       </md-chips>

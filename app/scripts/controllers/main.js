@@ -18,51 +18,51 @@ angular.module('cvApp')
         head: 'Javascript',
         list: [
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'AngularJS'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'NodeJS'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Karma'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Protractor'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Yeoman'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'GruntJS'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Bower'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'jQuery'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'ReactJS'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Lodash'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'D3JS'
           },
           {
-            image: 'http://lorempixel.com/50/50/people',
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Gmap'
           }
         ],
@@ -76,33 +76,43 @@ angular.module('cvApp')
         head: 'HTML & CSS',
         list: [
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'flexbox'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Compass'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'CSS3 Media Queries'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'CSS3 Transitions'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'CSS3 Box-sizing'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'localStorage'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'SVG'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'WAI-ARIA'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Digest access authentication'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'XSLT / DTD'
           }
         ]
@@ -115,24 +125,31 @@ angular.module('cvApp')
         head: 'PHP',
         list: [
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'eZ publish'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Symfony 2'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Spip'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Typo 3'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Smarty'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'xPath'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'cURL'
           }
         ]
@@ -145,12 +162,15 @@ angular.module('cvApp')
         head: 'CVS',
         list: [
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Git'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Github'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'SVN'
           }
         ]
@@ -163,24 +183,31 @@ angular.module('cvApp')
         head: 'System',
         list: [
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'centOS'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Debian'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Apache 2'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'MySQL'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Shell'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Solar'
           },
           {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Perl'
           }
         ]
