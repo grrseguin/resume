@@ -73,21 +73,21 @@ $lightness-hard: 70%;
   // background: #b9f6ca;
   background-color:hsl($green-hue, $saturation, $lightness-light);
   .md-chip{
-    background-color:hsl($green-hue, $saturation, $lightness-hard);
+    background-color:hsl($green-hue, $saturation, $lightness-hard - 10);
   }
 }
 .technical-skills .yellow {
   // background: #ffff8d;
   background-color:hsl($yellow-hue, $saturation, $lightness-light);
   .md-chip{
-    background-color:hsl($yellow-hue, $saturation, $lightness-hard);
+    background-color:hsl($yellow-hue, $saturation, $lightness-hard - 10);
   }
 }
 .technical-skills .blue {
   // background: #84ffff;
   background-color:hsl($blue-hue, $saturation, $lightness-light);
   .md-chip{
-    background-color:hsl($blue-hue, $saturation, $lightness-hard);
+    background-color:hsl($blue-hue + 10, $saturation, $lightness-hard);
   }
 }
 .technical-skills .purple {
