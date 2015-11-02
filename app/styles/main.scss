@@ -1,5 +1,14 @@
 // bower:scss
 // endbower
+header > md-content {
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  width: 60%;
+  > md-whiteframe > md-list > md-list-item{
+   word-break: break-word;
+  }
+}
 @mixin border-top-radius( $radius ) {
   -webkit-border-top-left-radius: $radius;
      -moz-border-top-left-radius: $radius;
