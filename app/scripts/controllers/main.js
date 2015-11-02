@@ -109,10 +109,6 @@ angular.module('cvApp')
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
-            name: 'Digest access authentication'
-          },
-          {
-            image: 'http://lorempixel.com/50/50/technics',
             name: 'XSLT / DTD'
           }
         ]
@@ -230,6 +226,21 @@ angular.module('cvApp')
           {
             name: 'Diagrammes UML'
           },
+          {
+            name: 'REST'
+          },
+          {
+            name: 'Single-page application'
+          },
+          {
+            name: 'State machine'
+          },
+          {
+            name: 'Digest access authentication'
+          },
+          {
+            name: 'Transclusion'
+          }
         ]
       },
       {
@@ -305,7 +316,7 @@ angular.module('cvApp')
         what: 'Anagène v3',
         when: 'sept. 2013 / dec. 2015',
         who: 'Réseau CANOPE',
-        notes: 'Comparaison de séquences A.D.N. (AngularJS & Typo3)'
+        notes: 'Application pédagogique : comparaison de séquences A.D.N.'
       },
       {
         face: 'https://material.angularjs.org/0.11.2/img/list/60.jpeg',
@@ -313,7 +324,7 @@ angular.module('cvApp')
         link: 'http://monespace.mapa-assurances.fr',
         when: 'sept. 2012 / sept. 2013',
         who: 'MAPA Assurances',
-        notes: 'Accès personnel aux services MAPA (eZ Publish 5 - symfony 2)'
+        notes: 'Accès personnel aux services MAPA'
       }
     ];
   });
