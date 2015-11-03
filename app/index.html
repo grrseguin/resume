@@ -24,8 +24,8 @@
       <md-card>
         <img src="images/person.jpg" class="md-card-image" alt="Photo d'identité">
       </md-card>
-      <md-content ng-controller="HeaderCtrl">
-        <md-toolbar class="md-theme-light" layout="row">
+      <div ng-controller="HeaderCtrl">
+        <md-toolbar layout="row">
           <div class="md-toolbar-tools">
             <img src="images/avatar.jpg" aria-label="Avatar">
             <h1 class="md-toolbar-tools">
@@ -41,7 +41,7 @@
             <md-list-item class="md-3-line" ng-repeat="subItem in subList" flex ng-class="subItem.classList" ng-click="subItem.onClick" ng-bind="subItem.title"></md-list-item>
           </md-list>
         </md-content>
-      </md-content>
+      </div>
     </header>
     <section ng-include="'views/main.html'" ng-controller="MainCtrl as main"></section>
     <footer></footer>

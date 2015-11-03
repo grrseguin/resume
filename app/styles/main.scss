@@ -4,12 +4,18 @@ header > md-content > md-content > md-list > md-list-item{
  word-break: break-word;
 }
 @media only screen and (min-width: 650px){
-  header > md-content {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    width: 60%;
-    height: 10em;
+  header {
+    height: 270px;
+    > div {
+      position: absolute;
+      top: 1em;
+      // bottom: 1em;
+      height: 250px;
+      left: 1em;
+      right: 27em;
+      background-color: black;
+      opacity: 0.3;
+    }
   }
 }
 @mixin border-top-radius( $radius ) {
