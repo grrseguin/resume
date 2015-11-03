@@ -1,12 +1,15 @@
 // bower:scss
 // endbower
-header > md-content {
-  position: absolute;
-  top: 2%;
-  left: 1%;
-  width: 60%;
-  > md-whiteframe > md-list > md-list-item{
-   word-break: break-word;
+header > md-content > md-content > md-list > md-list-item{
+ word-break: break-word;
+}
+@media only screen and (min-width: 650px){
+  header > md-content {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 60%;
+    height: 10em;
   }
 }
 @mixin border-top-radius( $radius ) {
@@ -219,7 +222,4 @@ body {
 }
 
 @media print{
-  .md-whiteframe-z3{
-    background-color: white;
-  }
 }

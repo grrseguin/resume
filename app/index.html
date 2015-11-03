@@ -22,22 +22,25 @@
     <![endif]-->
     <header>
       <md-card>
-        <img src="images/person.jpg" class="md-card-image" alt="Guillaume Seguin">
+        <img src="images/person.jpg" class="md-card-image" alt="Photo d'identité">
       </md-card>
-      <md-content class="box" ng-controller="HeaderCtrl">
+      <md-content ng-controller="HeaderCtrl">
         <md-toolbar class="md-theme-light" layout="row">
-          <h1 class="md-toolbar-tools">
-            <span>Guillaume Seguin</span>
-          </h1>
-          <h2 class="md-toolbar-tools">
-            <span>Développeur Web</span>
-          </h2>
+          <div class="md-toolbar-tools">
+            <img src="images/avatar.jpg" aria-label="Avatar">
+            <h1 class="md-toolbar-tools">
+              <span>Guillaume Seguin</span>
+            </h1>
+            <h2 class="md-toolbar-tools">
+              <span>Développeur Web</span>
+            </h2>
+          </div>
         </md-toolbar>
-        <md-whiteframe class="md-whiteframe-z3" layout="column" layout-padding layout-align="center start">
+        <md-content layout="column" layout-padding layout-align="center start">
           <md-list layout="row" layout-align="start center" layout-fill layout-wrap>
             <md-list-item class="md-3-line" ng-repeat="subItem in subList" flex ng-class="subItem.classList" ng-click="subItem.onClick" ng-bind="subItem.title"></md-list-item>
           </md-list>
-        </md-whiteframe>
+        </md-content>
       </md-content>
     </header>
     <section ng-include="'views/main.html'" ng-controller="MainCtrl as main"></section>
