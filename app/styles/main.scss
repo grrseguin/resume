@@ -12,6 +12,22 @@ header > md-content > md-content > md-list > md-list-item{
     height: 10em;
   }
 }
+
+div.header{
+  height: 270px;
+  min-height: 270px;
+  background-image: url('../images/person.jpg');
+  background-position: right top;
+  background-repeat: no-repeat;
+  > div:first-child{
+    position: absolute;
+    height: 270px;
+    width: 50%;
+    background-color: hsla(0, 0, 0, 0.5);
+  }
+  color: white;
+}
+
 @mixin border-top-radius( $radius ) {
   -webkit-border-top-left-radius: $radius;
      -moz-border-top-left-radius: $radius;
