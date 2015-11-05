@@ -12,7 +12,7 @@ angular.module('cvApp')
     this.technicalSkills = [
       {
         class: ['red', 'ts-3-item'],
-        mdRowspan: '2',
+        mdRowspan: '3',
         mdColspan: '2',
         mdColspanSm: '1',
         head: 'Javascript',
@@ -71,8 +71,8 @@ angular.module('cvApp')
       {
         class: ['yellow', 'ts-2-item'],
         mdRowspan: '2',
-        mdColspan: '1',
-        mdColspanSm: '2',
+        mdColspan: '2',
+        mdColspanSm: '1',
         head: 'HTML & CSS',
         list: [
           {
@@ -115,7 +115,7 @@ angular.module('cvApp')
       },
       {
         class: ['blue', 'ts-3-item'],
-        mdRowspan: '2',
+        mdRowspan: '1',
         mdColspan: '2',
         mdColspanSm: '1',
         head: 'PHP',
@@ -153,8 +153,8 @@ angular.module('cvApp')
       {
         class: ['purple', 'ts-2-item'],
         mdRowspan: '1',
-        mdColspan: '1',
-        mdColspanSm: '2',
+        mdColspan: '2',
+        mdColspanSm: '1',
         head: 'CVS',
         list: [
           {
@@ -174,8 +174,8 @@ angular.module('cvApp')
       {
         class: ['green', 'ts-2-item'],
         mdRowspan: '1',
-        mdColspan: '1',
-        mdColspanSm: '2',
+        mdColspan: '4',
+        mdColspanSm: '1',
         head: 'System',
         list: [
           {
