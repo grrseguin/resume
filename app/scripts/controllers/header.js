@@ -11,20 +11,16 @@ angular.module('cvApp')
   .controller('HeaderCtrl', function( $scope ){
     $scope.subList = [
       {
-        title: 'disponible en septembre 2015',
-        onClick: false
+        title: 'disponible en septembre 2015'
       },
       {
-        title: '37 ans',
-        onClick: false
+        title: '37 ans'
       },
       {
-        title: '12 ans d\'expérience',
-        onClick: false
+        title: '12 ans d\'expérience'
       },
       {
-        title: 'français',
-        onClick: false
+        title: 'français'
       },
       {
         title: '06 87 03 61 54',
