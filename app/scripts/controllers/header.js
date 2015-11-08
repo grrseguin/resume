@@ -11,16 +11,18 @@ angular.module('cvApp')
   .controller('HeaderCtrl', function( $scope ){
     $scope.subList = [
       {
-        title: 'disponible en septembre 2015'
+        title: 'disponible en septembre 2015',
+        classList: [ 'md-primary' ]
       },
       {
         title: '37 ans'
       },
       {
-        title: '12 ans d\'expérience'
+        title: 'français'
       },
       {
-        title: 'français'
+        title: '12 ans d\'expérience',
+        classList: [ 'md-accent' ]
       },
       {
         title: '06 87 03 61 54',
