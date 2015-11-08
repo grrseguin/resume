@@ -1,27 +1,64 @@
-@import "compass/css3/border-radius";
+@import "compass/css3";
 @import "compass/utilities/color/contrast";
+@import "compass/typography/lists/bullets";
+@import "compass/typography/lists/horizontal-list";
 
-header > md-content > md-content > md-list > md-list-item{
- word-break: break-word;
-}
 header {
   height: 270px;
   min-height: 270px;
+  background-color: #dadcd1;
   background-image: url('../images/person.jpg');
   background-position: right top;
   background-repeat: no-repeat;
   text-align: center;
   > div:first-child{
-    position: absolute;
     height: 270px;
+    min-height: 270px;
     width: 50%;
     @include contrasted( hsla( 0, 0, 0, 0.5 ));
-    .avatar{
-      @include border-radius(25pt);
+    > div:first-child{
+      @include flex-wrap(wrap);
+      .avatar{
+        @include border-radius(25pt);
+      }
+      h1,
+      h2{
+        margin: 0;
+      }
     }
-    h1,
-    h2{
-      margin: 0;
+    md-list{
+      @include flex-wrap(wrap);
+      > md-list-item{
+        @include contrasted( hsla( 0, 0, 0, 0.3 ));
+        word-break: break-word;
+      }
     }
   }
+}
+@media only screen and (min-width: 960px) and (max-width: 1200px){
+    header {
+      background-image: url('../images/person_lg.jpg');
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 960px){
+    header {
+      height: 353px;
+      min-height: 353px;
+      background-image: url('../images/person_md.jpg');
+      > div:first-child{
+        height: 353px;
+        min-height: 353px;
+      }
+    }
+}
+@media only screen and (max-width: 600px){
+    header {
+      height: 600px;
+      min-height: 600px;
+      background-image: url('../images/person_sm.jpg');
+      > div:first-child{
+        height: 600px;
+        min-height: 600px;
+      }
+    }
 }
