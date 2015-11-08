@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Ceviche+One);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
 @import "compass/css3";
 @import "compass/utilities/color/contrast";
 @import "compass/typography/lists/bullets";
@@ -17,8 +19,12 @@ header {
       .avatar{
         @include border-radius(25pt);
       }
-      h1,
+      h1{
+        font-family: 'Ceviche One', cursive;
+        margin: 0;
+      }
       h2{
+        font-family: 'Audiowide', cursive;
         margin: 0;
       }
     }
