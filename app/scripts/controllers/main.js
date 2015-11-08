@@ -46,7 +46,7 @@ angular.module('cvApp')
             name: 'Bower'
           },
           {
-            image: 'images/jquery.jpg',
+            image: 'images/jquery.jpeg',
             name: 'jQuery'
           },
           {
@@ -54,7 +54,7 @@ angular.module('cvApp')
             name: 'ReactJS'
           },
           {
-            image: 'images/lodash.jpg',
+            image: 'images/lodash.jpeg',
             name: 'Lodash'
           },
           {
