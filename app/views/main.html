@@ -1,15 +1,9 @@
-<md-button class="md-primary">Click me</md-button>
-<md-button class="md-accent">or maybe me</md-button>
-<md-button class="md-warn">Careful</md-button>
-<md-button class="md-accent md-hue-1">Click me</md-button>
-<md-button class="md-accent md-hue-2">Click me</md-button>
-<md-button class="md-accent md-hue-3">Click me</md-button>
 <md-toolbar class="md-theme-light">
   <h2 class="md-toolbar-tools">
     <span>Qualifications techniques</span>
   </h2>
 </md-toolbar>
-<md-content>
+<div>
   <md-grid-list class="technical-skills"
          md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
          md-row-height-gt-md="1:1" md-row-height="2:2"
@@ -29,13 +23,13 @@
       </md-grid-tile-footer>
     </md-grid-tile>
   </md-grid-list>
-</md-content>
+</div>
 <md-toolbar class="md-theme-light">
   <h2 class="md-toolbar-tools">
     <span>Qualifications orientées projet web</span>
   </h2>
 </md-toolbar>
-<md-content>
+<div>
   <md-grid-list class="project-skills"
          md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
          md-row-height-gt-md="1:1" md-row-height="2:2"
@@ -54,13 +48,13 @@
       </md-grid-tile-footer>
     </md-grid-tile>
   </md-grid-list>
-</md-content>
+</div>
 <md-toolbar class="md-theme-light">
   <h2 class="md-toolbar-tools">
     <span>Expériences professionnelles</span>
   </h2>
 </md-toolbar>
-<md-content>
+<div>
   <md-list>
     <md-list-item class="md-2-line" ng-repeat="job in main.jobs">
       <a ng-href="{{job.link}}" target="_blank">
@@ -76,4 +70,4 @@
       </div>
       <md-divider md-inset ng-if="!$last"></md-divider>
   </md-list>
-</md-content>
+</div>

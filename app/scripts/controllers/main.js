@@ -18,51 +18,51 @@ angular.module('cvApp')
         head: 'Javascript',
         list: [
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/angularjs.png',
             name: 'AngularJS'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/nodejs.png',
             name: 'NodeJS'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/karma.png',
             name: 'Karma'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/protractor.png',
             name: 'Protractor'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/yeoman.png',
             name: 'Yeoman'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/gruntjs.png',
             name: 'GruntJS'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/bower.png',
             name: 'Bower'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/jquery.jpg',
             name: 'jQuery'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/reactjs.jpg',
             name: 'ReactJS'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/lodash.jpg',
             name: 'Lodash'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/d3js.png',
             name: 'D3JS'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/gmap.png',
             name: 'Gmap'
           }
         ],
