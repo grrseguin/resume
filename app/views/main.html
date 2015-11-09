@@ -1,15 +1,17 @@
-<md-toolbar class="md-theme-light">
-  <h2 class="md-toolbar-tools">
-    <span>Qualifications techniques</span>
-  </h2>
-</md-toolbar>
 <div>
+  <md-toolbar class="md-theme-light">
+    <h2 class="md-toolbar-tools">
+      <span>Qualifications techniques</span>
+    </h2>
+  </md-toolbar>
   <md-grid-list class="technical-skills"
-         md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
-         md-row-height-gt-md="1:1" md-row-height="2:2"
-         md-gutter="12px" md-gutter-gt-sm="8px" >
-    <md-grid-tile ng-repeat="technicalSkill in main.technicalSkills" ng-class="technicalSkill.class" md-rowspan="{{technicalSkill.mdRowspan}}" md-colspan="{{technicalSkill.mdColspan}}" md-colspan-sm="{{technicalSkill.mdColspanSm}}">
-      <md-grid-tile-header>
+    md-cols="11" md-cols-lg="3" md-cols-md="3" md-cols-sm="1"
+    md-row-height="24:9" md-row-height-lg="2:2" md-row-height-md="2:2" md-row-height-sm="2:2"
+    md-gutter="12px" md-gutter-gt-sm="8px" >
+    <md-grid-tile ng-repeat="technicalSkill in main.technicalSkills" ng-class="technicalSkill.class"
+      md-colspan="{{technicalSkill.mdColspan}}" md-colspan-sm="{{technicalSkill.mdColspanSm}}"
+      md-rowspan="{{technicalSkill.mdRowspan}}">
+      <md-grid-tile-header ng-if="technicalSkill.head">
         <h3 ng-bind="technicalSkill.head"></h3>
       </md-grid-tile-header>
       <md-chips ng-model="technicalSkill.list" readonly="true" class="with-icon">
@@ -24,12 +26,12 @@
     </md-grid-tile>
   </md-grid-list>
 </div>
-<md-toolbar class="md-theme-light">
-  <h2 class="md-toolbar-tools">
-    <span>Qualifications orientées projet web</span>
-  </h2>
-</md-toolbar>
 <div>
+  <md-toolbar class="md-theme-light">
+    <h2 class="md-toolbar-tools">
+      <span>Qualifications orientées projet web</span>
+    </h2>
+  </md-toolbar>
   <md-grid-list class="project-skills"
          md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
          md-row-height-gt-md="1:1" md-row-height="2:2"

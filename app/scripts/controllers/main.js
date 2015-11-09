@@ -11,9 +11,9 @@ angular.module('cvApp')
   .controller('MainCtrl', function(){
     this.technicalSkills = [
       {
-        class: ['red', 'ts-3-item'],
-        mdRowspan: '3',
-        mdColspan: '2',
+        class: ['red'],
+        mdColspan: '8',
+        mdRowspan: '5',
         mdColspanSm: '1',
         head: 'Javascript',
         list: [
@@ -69,9 +69,9 @@ angular.module('cvApp')
         foot: 'C\'est la technologie sur laquelle j\'ai fait le plus de progrès dernièrement.'
       },
       {
-        class: ['yellow', 'ts-2-item'],
-        mdRowspan: '2',
+        class: ['yellow', 'no-foot'],
         mdColspan: '2',
+        mdRowspan: '9',
         mdColspanSm: '1',
         head: 'HTML & CSS',
         list: [
@@ -114,9 +114,30 @@ angular.module('cvApp')
         ]
       },
       {
-        class: ['blue', 'ts-3-item'],
-        mdRowspan: '1',
-        mdColspan: '2',
+        class: ['purple', 'no-foot'],
+        mdColspan: '1',
+        mdRowspan: '9',
+        mdColspanSm: '1',
+        head: 'CVS',
+        list: [
+          {
+            image: 'http://lorempixel.com/50/50/technics',
+            name: 'Git'
+          },
+          {
+            image: 'http://lorempixel.com/50/50/technics',
+            name: 'Github'
+          },
+          {
+            image: 'http://lorempixel.com/50/50/technics',
+            name: 'SVN'
+          }
+        ]
+      },
+      {
+        class: ['blue', 'no-foot'],
+        mdColspan: '4',
+        mdRowspan: '4',
         mdColspanSm: '1',
         head: 'PHP',
         list: [
@@ -151,30 +172,9 @@ angular.module('cvApp')
         ]
       },
       {
-        class: ['purple', 'ts-2-item'],
-        mdRowspan: '1',
-        mdColspan: '2',
-        mdColspanSm: '1',
-        head: 'CVS',
-        list: [
-          {
-            image: 'http://lorempixel.com/50/50/technics',
-            name: 'Git'
-          },
-          {
-            image: 'http://lorempixel.com/50/50/technics',
-            name: 'Github'
-          },
-          {
-            image: 'http://lorempixel.com/50/50/technics',
-            name: 'SVN'
-          }
-        ]
-      },
-      {
-        class: ['green', 'ts-2-item'],
-        mdRowspan: '1',
+        class: ['green', 'no-foot'],
         mdColspan: '4',
+        mdRowspan: '4',
         mdColspanSm: '1',
         head: 'System',
         list: [
