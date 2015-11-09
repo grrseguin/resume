@@ -14,6 +14,9 @@ angular.module('cvApp')
         class: ['red'],
         mdColspan: '8',
         mdRowspan: '5',
+        mdColspanLg: '8',
+        mdColspanMd: '10',
+        mdRowspanMd: '16',
         mdColspanSm: '1',
         head: 'Javascript',
         list: [
@@ -26,8 +29,16 @@ angular.module('cvApp')
             name: 'NodeJS'
           },
           {
+            image: 'images/d3js.png',
+            name: 'D3JS'
+          },
+          {
             image: 'images/karma.png',
             name: 'Karma'
+          },
+          {
+            image: 'images/gmap.png',
+            name: 'Gmap'
           },
           {
             image: 'images/protractor.png',
@@ -56,14 +67,6 @@ angular.module('cvApp')
           {
             image: 'images/lodash.jpeg',
             name: 'Lodash'
-          },
-          {
-            image: 'images/d3js.png',
-            name: 'D3JS'
-          },
-          {
-            image: 'images/gmap.png',
-            name: 'Gmap'
           }
         ],
         foot: 'C\'est la technologie sur laquelle j\'ai fait le plus de progrès dernièrement.'
@@ -72,12 +75,15 @@ angular.module('cvApp')
         class: ['yellow', 'no-foot'],
         mdColspan: '2',
         mdRowspan: '9',
+        mdColspanLg: '2',
+        mdColspanMd: '10',
+        mdRowspanMd: '11',
         mdColspanSm: '1',
         head: 'HTML & CSS',
         list: [
           {
             image: 'http://lorempixel.com/50/50/technics',
-            name: 'flexbox'
+            name: 'CSS3 Media Query'
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
@@ -85,11 +91,11 @@ angular.module('cvApp')
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
-            name: 'CSS3 Media Queries'
+            name: 'CSS3 Transition'
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
-            name: 'CSS3 Transitions'
+            name: 'WAI-ARIA'
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
@@ -101,15 +107,15 @@ angular.module('cvApp')
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
-            name: 'SVG'
-          },
-          {
-            image: 'http://lorempixel.com/50/50/technics',
-            name: 'WAI-ARIA'
-          },
-          {
-            image: 'http://lorempixel.com/50/50/technics',
             name: 'XSLT / DTD'
+          },
+          {
+            image: 'http://lorempixel.com/50/50/technics',
+            name: 'flexbox'
+          },
+          {
+            image: 'http://lorempixel.com/50/50/technics',
+            name: 'SVG'
           }
         ]
       },
@@ -117,6 +123,9 @@ angular.module('cvApp')
         class: ['purple', 'no-foot'],
         mdColspan: '1',
         mdRowspan: '9',
+        mdColspanLg: '1',
+        mdColspanMd: '10',
+        mdRowspanMd: '5',
         mdColspanSm: '1',
         head: 'CVS',
         list: [
@@ -138,6 +147,9 @@ angular.module('cvApp')
         class: ['blue', 'no-foot'],
         mdColspan: '4',
         mdRowspan: '4',
+        mdColspanLg: '4',
+        mdColspanMd: '10',
+        mdRowspanMd: '9',
         mdColspanSm: '1',
         head: 'PHP',
         list: [
@@ -159,15 +171,15 @@ angular.module('cvApp')
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
+            name: 'cURL'
+          },
+          {
+            image: 'http://lorempixel.com/50/50/technics',
             name: 'Smarty'
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
             name: 'xPath'
-          },
-          {
-            image: 'http://lorempixel.com/50/50/technics',
-            name: 'cURL'
           }
         ]
       },
@@ -175,6 +187,9 @@ angular.module('cvApp')
         class: ['green', 'no-foot'],
         mdColspan: '4',
         mdRowspan: '4',
+        mdColspanLg: '4',
+        mdColspanMd: '10',
+        mdRowspanMd: '9',
         mdColspanSm: '1',
         head: 'System',
         list: [

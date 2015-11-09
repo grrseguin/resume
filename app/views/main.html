@@ -5,12 +5,12 @@
     </h2>
   </md-toolbar>
   <md-grid-list class="technical-skills"
-    md-cols="11" md-cols-lg="3" md-cols-md="3" md-cols-sm="1"
-    md-row-height="24:9" md-row-height-lg="2:2" md-row-height-md="2:2" md-row-height-sm="2:2"
+    md-cols="11" md-cols-lg="11" md-cols-md="20" md-cols-sm="1"
+    md-row-height="24:9" md-row-height-lg="24:9" md-row-height-md="13:8" md-row-height-sm="2:2"
     md-gutter="12px" md-gutter-gt-sm="8px" >
     <md-grid-tile ng-repeat="technicalSkill in main.technicalSkills" ng-class="technicalSkill.class"
-      md-colspan="{{technicalSkill.mdColspan}}" md-colspan-sm="{{technicalSkill.mdColspanSm}}"
-      md-rowspan="{{technicalSkill.mdRowspan}}">
+      md-colspan="{{technicalSkill.mdColspan}}" md-colspan-lg="{{technicalSkill.mdColspanLg}}" md-colspan-md="{{technicalSkill.mdColspanMd}}" md-colspan-sm="{{technicalSkill.mdColspanSm}}"
+      md-rowspan="{{technicalSkill.mdRowspan}}" md-rowspan-md="{{technicalSkill.mdRowspanMd}}">
       <md-grid-tile-header ng-if="technicalSkill.head">
         <h3 ng-bind="technicalSkill.head"></h3>
       </md-grid-tile-header>
