@@ -3,59 +3,12 @@
 * {
 	font-family: "trebuchet ms", arial, sans-serif;
 }
-@mixin border-top-radius( $radius ) {
-  -webkit-border-top-left-radius: $radius;
-     -moz-border-top-left-radius: $radius;
-      -ms-border-top-left-radius: $radius;
-          border-top-left-radius: $radius;
-  -webkit-border-top-right-radius: $radius;
-     -moz-border-top-right-radius: $radius;
-      -ms-border-top-right-radius: $radius;
-          border-top-right-radius: $radius;
-}
-@mixin border-bottom-radius( $radius ) {
-  -webkit-border-bottom-left-radius: $radius;
-     -moz-border-bottom-left-radius: $radius;
-      -ms-border-bottom-left-radius: $radius;
-          border-bottom-left-radius: $radius;
-  -webkit-border-bottom-right-radius: $radius;
-     -moz-border-bottom-right-radius: $radius;
-      -ms-border-bottom-right-radius: $radius;
-          border-bottom-right-radius: $radius;
-}
-@mixin border-top-left-radius( $radius ) {
-  -webkit-border-top-left-radius: $radius;
-     -moz-border-top-left-radius: $radius;
-      -ms-border-top-left-radius: $radius;
-          border-top-left-radius: $radius;
-}
-@mixin border-bottom-right-radius( $radius ) {
-  -webkit-border-bottom-right-radius: $radius;
-     -moz-border-bottom-right-radius: $radius;
-      -ms-border-bottom-right-radius: $radius;
-          border-bottom-right-radius: $radius;
-}
-.box{
-  margin: 0.5em;
-  > *:first-child{
-    @include border-top-radius(25pt);
-  }
-  > *:last-child{
-    @include border-bottom-radius(25pt);
-  }
-}
-.blade{
-  @include border-top-left-radius(25pt);
-  @include border-bottom-right-radius(25pt);
-}
+
 .face {
   border-radius: 30px;
   border: 1px solid #ddd;
   width: 48px;
   margin: 16px;
-}
-md-grid-list.technical-skills {
-  margin: 8px;
 }
 $red-hue: 5;
 $green-hue: 137;
