@@ -37,17 +37,17 @@ header {
     }
   }
 }
-@media only screen and (min-width: 960px) and (max-width: 1200px){
+@media (min-width: 960px) and (max-width: 1200px){
     header {
       background-image: url('../images/person_lg.jpg');
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 960px){
+@media (min-width: 600px) and (max-width: 960px){
     header {
       background-image: url('../images/person_md.jpg');
     }
 }
-@media only screen and (max-width: 600px){
+@media (max-width: 600px){
     header {
       background-image: url('../images/person_sm.jpg');
     }
