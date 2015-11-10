@@ -83,7 +83,7 @@ angular.module('cvApp')
         list: [
           {
             image: 'http://lorempixel.com/50/50/technics',
-            name: 'CSS3 Media Query'
+            name: 'Media Query'
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
@@ -91,7 +91,7 @@ angular.module('cvApp')
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
-            name: 'CSS3 Transition'
+            name: 'Transition'
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
@@ -99,7 +99,7 @@ angular.module('cvApp')
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
-            name: 'CSS3 Box-sizing'
+            name: 'Box-sizing'
           },
           {
             image: 'http://lorempixel.com/50/50/technics',
@@ -149,7 +149,7 @@ angular.module('cvApp')
         mdRowspan: '4',
         mdColspanLg: '4',
         mdColspanMd: '10',
-        mdRowspanMd: '4',
+        mdRowspanMd: '5',
         mdColspanSm: '1',
         head: 'PHP',
         list: [
@@ -189,7 +189,7 @@ angular.module('cvApp')
         mdRowspan: '4',
         mdColspanLg: '4',
         mdColspanMd: '10',
-        mdRowspanMd: '4',
+        mdRowspanMd: '5',
         mdColspanSm: '1',
         head: 'System',
         list: [
