@@ -69,7 +69,7 @@ angular.module('cvApp')
             name: 'Lodash'
           }
         ],
-        foot: 'C\'est la technologie sur laquelle j\'ai fait le plus de progrès dernièrement.'
+        foot: 'Ma technologie préférée du moment.'
       },
       {
         class: ['yellow', 'no-foot'],

@@ -1,5 +1,6 @@
 // bower:scss
 // endbower
+@import "compass/utilities/color/contrast";
 * {
 	font-family: "trebuchet ms", arial, sans-serif;
 }
@@ -22,41 +23,41 @@ $lightness-hard: 70%;
   // background: #f5f5f5;
   background-color:hsl(0, 0, $lightness-light);
   .md-chip{
-    background-color:hsl(0, 0, $lightness-hard);
+		@include contrasted( hsl(0, 0, $lightness-hard));
   }
 }
 .technical-skills .green {
   // background: #b9f6ca;
   background-color:hsl($green-hue, $saturation, $lightness-light);
   .md-chip{
-    background-color:hsl($green-hue, $saturation, $lightness-hard - 10);
+		@include contrasted( hsl($green-hue, $saturation, $lightness-hard - 10));
   }
 }
 .technical-skills .yellow {
   // background: #ffff8d;
   background-color:hsl($yellow-hue, $saturation, $lightness-light);
   .md-chip{
-    background-color:hsl($yellow-hue, $saturation, $lightness-hard - 10);
+		@include contrasted( hsl($yellow-hue, $saturation, $lightness-hard - 10));
   }
 }
 .technical-skills .blue {
   // background: #84ffff;
   background-color:hsl($blue-hue, $saturation, $lightness-light);
   .md-chip{
-    background-color:hsl($blue-hue + 10, $saturation, $lightness-hard);
+		@include contrasted( hsl($blue-hue + 10, $saturation, $lightness-hard));
   }
 }
 .technical-skills .purple {
   // background: #b388ff;
   background-color:hsl($purple-hue, $saturation, $lightness-light);
   .md-chip{
-    background-color:hsl($purple-hue, $saturation, $lightness-hard);
+		@include contrasted( hsl($purple-hue, $saturation, $lightness-hard));
   }
 }
 .technical-skills .red {
   background-color:hsl($red-hue, $saturation, $lightness-light);
   .md-chip{
-    background-color:hsl($red-hue, $saturation, $lightness-hard);
+		@include contrasted( hsl($red-hue, $saturation, $lightness-hard));
   }
 }
 .technical-skills md-grid-tile {
