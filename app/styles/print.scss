@@ -22,9 +22,14 @@
     min-height: 32px;
     height: 32px;
   }
-  md-grid-list md-grid-tile md-grid-tile-header,
-  md-grid-list md-grid-tile md-grid-tile-footer{
-    height: 24px;
+  md-grid-list md-grid-tile{
+    md-grid-tile-header,
+    md-grid-tile-footer{
+      height: 24px;
+    }
+  }
+  md-grid-list md-grid-tile.no-foot md-chips{
+    margin-top: 28px;
   }
   .md-chips .md-chip{
     line-height: 25px;

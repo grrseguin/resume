@@ -1,3 +1,5 @@
-div > md-grid-list > md-grid-tile.no-foot md-chips{
-  margin-top: 48px;
+@media only screen{
+  div > md-grid-list > md-grid-tile.no-foot md-chips{
+    margin-top: 48px;
+  }
 }

@@ -16,7 +16,7 @@ angular.module('cvApp')
         mdRowspan: '5',
         mdColspanLg: '8',
         mdColspanMd: '10',
-        mdRowspanMd: '16',
+        mdRowspanMd: '9',
         mdColspanSm: '1',
         head: 'Javascript',
         list: [
@@ -77,7 +77,7 @@ angular.module('cvApp')
         mdRowspan: '9',
         mdColspanLg: '2',
         mdColspanMd: '10',
-        mdRowspanMd: '11',
+        mdRowspanMd: '6',
         mdColspanSm: '1',
         head: 'HTML & CSS',
         list: [
@@ -125,7 +125,7 @@ angular.module('cvApp')
         mdRowspan: '9',
         mdColspanLg: '1',
         mdColspanMd: '10',
-        mdRowspanMd: '5',
+        mdRowspanMd: '3',
         mdColspanSm: '1',
         head: 'CVS',
         list: [
@@ -149,7 +149,7 @@ angular.module('cvApp')
         mdRowspan: '4',
         mdColspanLg: '4',
         mdColspanMd: '10',
-        mdRowspanMd: '9',
+        mdRowspanMd: '4',
         mdColspanSm: '1',
         head: 'PHP',
         list: [
@@ -189,7 +189,7 @@ angular.module('cvApp')
         mdRowspan: '4',
         mdColspanLg: '4',
         mdColspanMd: '10',
-        mdRowspanMd: '9',
+        mdRowspanMd: '4',
         mdColspanSm: '1',
         head: 'System',
         list: [
