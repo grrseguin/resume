@@ -226,14 +226,17 @@ angular.module('cvApp')
     ];
     this.projectSkills = [
       {
-        class: ['red'],
-        mdRowspan: '2',
-        mdColspan: '2',
+        class: ['no-foot'],
+        mdColspan: '1',
+        mdRowspan: '1',
+        mdColspanLg: '1',
+        mdColspanMd: '1',
+        mdRowspanMd: '2',
         mdColspanSm: '1',
         head: 'Conception',
         list: [
           {
-            name: 'Rédaction de spéficifications fonctionnelles détaillées'
+            name: 'Spéficifications fonctionnelles détaillées'
           },
           {
             name: 'Storyboard'
@@ -259,9 +262,12 @@ angular.module('cvApp')
         ]
       },
       {
-        class: ['red'],
-        mdRowspan: '2',
-        mdColspan: '2',
+        class: ['no-foot'],
+        mdColspan: '1',
+        mdRowspan: '1',
+        mdColspanLg: '1',
+        mdColspanMd: '1',
+        mdRowspanMd: '1',
         mdColspanSm: '1',
         head: 'Réalisation',
         list: [
@@ -277,9 +283,12 @@ angular.module('cvApp')
         ]
       },
       {
-        class: ['red'],
-        mdRowspan: '2,',
-        mdColspan: '2',
+        class: ['no-foot'],
+        mdColspan: '1',
+        mdRowspan: '1',
+        mdColspanLg: '1',
+        mdColspanMd: '1',
+        mdRowspanMd: '1',
         mdColspanSm: '1',
         head: 'Recette',
         list: [
@@ -292,9 +301,12 @@ angular.module('cvApp')
         ]
       },
       {
-        class: ['red'],
-        mdRowspan: '2',
-        mdColspan: '2',
+        class: ['no-foot'],
+        mdColspan: '1',
+        mdRowspan: '1',
+        mdColspanLg: '1',
+        mdColspanMd: '1',
+        mdRowspanMd: '1',
         mdColspanSm: '1',
         head: 'Déploiement',
         list: [
@@ -307,9 +319,12 @@ angular.module('cvApp')
         ]
       },
       {
-        class: ['red'],
-        mdRowspan: '2',
-        mdColspan: '2',
+        class: ['no-foot'],
+        mdColspan: '1',
+        mdRowspan: '1',
+        mdColspanLg: '1',
+        mdColspanMd: '1',
+        mdRowspanMd: '1',
         mdColspanSm: '1',
         head: 'Suivi',
         list: [
