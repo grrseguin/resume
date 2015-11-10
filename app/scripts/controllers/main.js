@@ -82,39 +82,39 @@ angular.module('cvApp')
         head: 'HTML & CSS',
         list: [
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/css3.png',
             name: 'Media Query'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/compass.png',
             name: 'Compass'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/css3.png',
             name: 'Transition'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/html5.svg',
             name: 'WAI-ARIA'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/css3.png',
             name: 'Box-sizing'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/html5.svg',
             name: 'localStorage'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/w3c.jpg',
             name: 'XSLT / DTD'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/css3.png',
             name: 'flexbox'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/w3c.jpg',
             name: 'SVG'
           }
         ]
@@ -130,15 +130,15 @@ angular.module('cvApp')
         head: 'CVS',
         list: [
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/git.png',
             name: 'Git'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/github.png',
             name: 'Github'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/tortoise_svn.jpg',
             name: 'SVN'
           }
         ]
@@ -154,31 +154,31 @@ angular.module('cvApp')
         head: 'PHP',
         list: [
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/ez_publish.png',
             name: 'eZ publish'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/symfony2.png',
             name: 'Symfony 2'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/spip.png',
             name: 'Spip'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/typo3.png',
             name: 'Typo 3'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/php.jpg',
             name: 'cURL'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/smarty.jpg',
             name: 'Smarty'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/php.jpg',
             name: 'xPath'
           }
         ]
@@ -194,31 +194,31 @@ angular.module('cvApp')
         head: 'System',
         list: [
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/centOS.png',
             name: 'centOS'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/debian.png',
             name: 'Debian'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/apache.gif',
             name: 'Apache 2'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/mysql.png',
             name: 'MySQL'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/unix.jpg',
             name: 'Shell'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
-            name: 'Solar'
+            image: 'images/solr.gif',
+            name: 'Solr'
           },
           {
-            image: 'http://lorempixel.com/50/50/technics',
+            image: 'images/perl.gif',
             name: 'Perl'
           }
         ]
