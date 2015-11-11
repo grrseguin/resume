@@ -10,6 +10,10 @@
 	@include border-top-radius(25pt);
   margin: 8px;
 }
+.smile{
+	@include border-bottom-radius(25pt);
+  margin: 3px;
+}
 $gray-lightness: 75%;
 md-grid-tile.gray {
   background-color:hsl(0, 0, $gray-lightness);
@@ -120,6 +124,9 @@ md-chips .md-chips{
   margin-left: 8px;
 }
 
+md-list-item > a + .md-list-item-text{
+	margin: 0 8px;
+}
 
 .browsehappy {
   margin: 0.2em 0;

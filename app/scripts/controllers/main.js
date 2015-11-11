@@ -384,4 +384,31 @@ angular.module('cvApp')
         notes: 'Plate-forme de réseau social professionnel - @ aYaline'
       }
     ];
+    this.formations = [
+      {
+        what: 'Programmation en Visual Basic .NET avec Microsoft .NET (réf. 2560)',
+        when: 'Mai 2006',
+        face: 'http://lorempixel.com/120/50/city/1/'
+      },
+      {
+        what: 'Formation ingénieur en développement LOTUS et INTERNET',
+        when: '2001-2002',
+        face: 'http://lorempixel.com/120/50/city/2/'
+      },
+      {
+        what: 'DESS Système d’Information et Contrôle',
+        when: '2000-2001',
+        face: 'http://lorempixel.com/120/50/city/3/'
+      },
+      {
+        what: 'Maîtrise Administration et Gestion des Entreprises',
+        when: '1998-1999',
+        face: 'http://lorempixel.com/120/50/city/4/'
+      },
+      {
+        what: 'Bac série ES',
+        when: '1994-1995',
+        face: 'http://lorempixel.com/120/50/city/1/'
+      }
+    ];
   });
