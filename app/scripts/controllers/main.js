@@ -145,7 +145,7 @@ angular.module('cvApp')
       },
       {
         head: 'PHP',
-        class: ['blue', 'no-foot'],
+        class: ['cyan', 'no-foot'],
         mdColspan: '4',
         mdRowspan: '4',
         mdColspanLg: '4',
@@ -227,7 +227,7 @@ angular.module('cvApp')
     this.projectSkills = [
       {
         head: 'Conception',
-        class: ['no-foot'],
+        class: ['orange', 'no-foot'],
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
@@ -263,7 +263,7 @@ angular.module('cvApp')
       },
       {
         head: 'Réalisation',
-        class: ['no-foot'],
+        class: ['blue', 'no-foot'],
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
@@ -284,7 +284,7 @@ angular.module('cvApp')
       },
       {
         head: 'Suivi',
-        class: ['no-foot'],
+        class: ['gray', 'no-foot'],
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
@@ -311,7 +311,7 @@ angular.module('cvApp')
       },
       {
         head: 'Recette',
-        class: ['no-foot'],
+        class: ['pink', 'no-foot'],
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
@@ -329,7 +329,7 @@ angular.module('cvApp')
       },
       {
         head: 'Déploiement',
-        class: ['no-foot'],
+        class: ['brown', 'no-foot'],
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',

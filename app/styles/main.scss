@@ -11,56 +11,99 @@
   width: 48px;
   margin: 16px;
 }
-$red-hue: 5;
+$gray-lightness: 75%;
+md-grid-tile.gray {
+  background-color:hsl(0, 0, $gray-lightness);
+  .md-chip{
+		@include contrasted( hsl(0, 0, $gray-lightness - 5));
+  }
+}
 $green-hue: 137;
+$green-saturation: 100%;
+$green-lightness: 75%;
+md-grid-tile.green {
+  background-color:hsl($green-hue, $green-saturation, $green-lightness);
+  .md-chip{
+		@include contrasted( hsl($green-hue, $green-saturation, $green-lightness - 15));
+  }
+}
 $yellow-hue: 60;
-$blue-hue: 180;
-$purple-hue: 262;
-$saturation: 100%;
-$lightness-light: 75%;
-$lightness-hard: 70%;
-.technical-skills .gray {
-  // background: #f5f5f5;
-  background-color:hsl(0, 0, $lightness-light);
-  .md-chip{
-		@include contrasted( hsl(0, 0, $lightness-hard));
-  }
-}
-.technical-skills .green {
-  // background: #b9f6ca;
-  background-color:hsl($green-hue, $saturation, $lightness-light);
-  .md-chip{
-		@include contrasted( hsl($green-hue, $saturation, $lightness-hard - 10));
-  }
-}
-.technical-skills .yellow {
+$yellow-saturation: 100%;
+$yellow-lightness: 75%;
+md-grid-tile.yellow {
   // background: #ffff8d;
-  background-color:hsl($yellow-hue, $saturation, $lightness-light);
+  background-color:hsl($yellow-hue, $yellow-saturation, $yellow-lightness);
   .md-chip{
-		@include contrasted( hsl($yellow-hue, $saturation, $lightness-hard - 10));
+		@include contrasted( hsl($yellow-hue, $yellow-saturation, $yellow-lightness - 15));
   }
 }
-.technical-skills .blue {
+$cyan-hue: 180;
+$cyan-saturation: 100%;
+$cyan-lightness: 75%;
+md-grid-tile.cyan {
   // background: #84ffff;
-  background-color:hsl($blue-hue, $saturation, $lightness-light);
+  background-color:hsl($cyan-hue, $cyan-saturation, $cyan-lightness);
   .md-chip{
-		@include contrasted( hsl($blue-hue + 10, $saturation, $lightness-hard));
+		@include contrasted( hsl($cyan-hue, $cyan-saturation, $cyan-lightness - 30));
   }
 }
-.technical-skills .purple {
+$blue-hue: 240;
+$blue-saturation: 100%;
+$blue-lightness: 75%;
+md-grid-tile.blue {
+  // background: #84ffff;
+  background-color:hsl($blue-hue, $blue-saturation, $blue-lightness);
+  .md-chip{
+		@include contrasted( hsl($blue-hue, $blue-saturation, $blue-lightness - 5));
+  }
+}
+$purple-hue: 262;
+$purple-saturation: 100%;
+$purple-lightness: 75%;
+md-grid-tile.purple {
   // background: #b388ff;
-  background-color:hsl($purple-hue, $saturation, $lightness-light);
+  background-color:hsl($purple-hue, $purple-saturation, $purple-lightness);
   .md-chip{
-		@include contrasted( hsl($purple-hue, $saturation, $lightness-hard));
+		@include contrasted( hsl($purple-hue, $purple-saturation, $purple-lightness - 5));
   }
 }
-.technical-skills .red {
-  background-color:hsl($red-hue, $saturation, $lightness-light);
+$red-hue: 5;
+$red-saturation: 100%;
+$red-lightness: 75%;
+md-grid-tile.red {
+  background-color:hsl($red-hue, $red-saturation, $red-lightness);
   .md-chip{
-		@include contrasted( hsl($red-hue, $saturation, $lightness-hard));
+		@include contrasted( hsl($red-hue, $red-saturation, $red-lightness - 5));
   }
 }
-.technical-skills md-grid-tile {
+$orange-hue: 26;
+$orange-saturation: 100%;
+$orange-lightness: 75%;
+md-grid-tile.orange {
+  background-color:hsl($orange-hue, $orange-saturation, $orange-lightness);
+  .md-chip{
+		@include contrasted( hsl($orange-hue, $orange-saturation, $orange-lightness - 5));
+  }
+}
+$pink-hue: 14;
+$pink-saturation: 100%;
+$pink-lightness: 75%;
+md-grid-tile.pink {
+  background-color:hsl($pink-hue, $pink-saturation, $pink-lightness);
+  .md-chip{
+		@include contrasted( hsl($pink-hue, $pink-saturation, $pink-lightness - 5));
+  }
+}
+$brown-hue: 16;
+$brown-saturation: 25%;
+$brown-lightness: 38%;
+md-grid-tile.brown {
+  background-color:hsl($brown-hue, $brown-saturation, $brown-lightness);
+  .md-chip{
+		@include contrasted( hsl($brown-hue, $brown-saturation, $brown-lightness - 5));
+  }
+}
+md-grid-tile md-grid-tile {
   transition: all 400ms ease-out 50ms;
 }
 
