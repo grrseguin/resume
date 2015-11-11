@@ -11,6 +11,7 @@ angular.module('cvApp')
   .controller('MainCtrl', function(){
     this.technicalSkills = [
       {
+        head: 'Javascript',
         class: ['red'],
         mdColspan: '8',
         mdRowspan: '5',
@@ -18,7 +19,6 @@ angular.module('cvApp')
         mdColspanMd: '10',
         mdRowspanMd: '9',
         mdColspanSm: '1',
-        head: 'Javascript',
         list: [
           {
             image: 'images/angularjs.png',
@@ -69,9 +69,10 @@ angular.module('cvApp')
             name: 'Lodash'
           }
         ],
-        foot: 'Ma technologie préférée du moment.'
+        foot: 'Ma technologie préférée.'
       },
       {
+        head: 'HTML & CSS',
         class: ['yellow', 'no-foot'],
         mdColspan: '2',
         mdRowspan: '9',
@@ -79,7 +80,6 @@ angular.module('cvApp')
         mdColspanMd: '10',
         mdRowspanMd: '6',
         mdColspanSm: '1',
-        head: 'HTML & CSS',
         list: [
           {
             image: 'images/css3.png',
@@ -120,6 +120,7 @@ angular.module('cvApp')
         ]
       },
       {
+        head: 'CVS',
         class: ['purple', 'no-foot'],
         mdColspan: '1',
         mdRowspan: '9',
@@ -127,7 +128,6 @@ angular.module('cvApp')
         mdColspanMd: '10',
         mdRowspanMd: '3',
         mdColspanSm: '1',
-        head: 'CVS',
         list: [
           {
             image: 'images/git.png',
@@ -144,6 +144,7 @@ angular.module('cvApp')
         ]
       },
       {
+        head: 'PHP',
         class: ['blue', 'no-foot'],
         mdColspan: '4',
         mdRowspan: '4',
@@ -151,7 +152,6 @@ angular.module('cvApp')
         mdColspanMd: '10',
         mdRowspanMd: '5',
         mdColspanSm: '1',
-        head: 'PHP',
         list: [
           {
             image: 'images/ez_publish.png',
@@ -184,6 +184,7 @@ angular.module('cvApp')
         ]
       },
       {
+        head: 'Système',
         class: ['green', 'no-foot'],
         mdColspan: '4',
         mdRowspan: '4',
@@ -191,7 +192,6 @@ angular.module('cvApp')
         mdColspanMd: '10',
         mdRowspanMd: '5',
         mdColspanSm: '1',
-        head: 'System',
         list: [
           {
             image: 'images/centOS.png',
@@ -226,14 +226,14 @@ angular.module('cvApp')
     ];
     this.projectSkills = [
       {
+        head: 'Conception',
         class: ['no-foot'],
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
-        mdColspanMd: '1',
-        mdRowspanMd: '2',
+        mdColspanMd: '3',
+        mdRowspanMd: '3',
         mdColspanSm: '1',
-        head: 'Conception',
         list: [
           {
             name: 'Spéficifications fonctionnelles détaillées'
@@ -262,17 +262,17 @@ angular.module('cvApp')
         ]
       },
       {
+        head: 'Réalisation',
         class: ['no-foot'],
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
-        mdColspanMd: '1',
+        mdColspanMd: '2',
         mdRowspanMd: '1',
         mdColspanSm: '1',
-        head: 'Réalisation',
         list: [
           {
-            name: 'Zend studios'
+            name: 'Zend studio'
           },
           {
             name: 'Netbeans'
@@ -283,14 +283,41 @@ angular.module('cvApp')
         ]
       },
       {
+        head: 'Suivi',
         class: ['no-foot'],
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
-        mdColspanMd: '1',
+        mdColspanMd: '2',
+        mdRowspanMd: '3',
+        mdColspanSm: '1',
+        list: [
+          {
+            name: 'Relation client'
+          },
+          {
+            name: 'Animation de réunion'
+          },
+          {
+            name: 'Suivi des délais/charges'
+          },
+          {
+            name: 'Jira'
+          },
+          {
+            name: 'MantisBT'
+          }
+        ]
+      },
+      {
+        head: 'Recette',
+        class: ['no-foot'],
+        mdColspan: '1',
+        mdRowspan: '1',
+        mdColspanLg: '1',
+        mdColspanMd: '2',
         mdRowspanMd: '1',
         mdColspanSm: '1',
-        head: 'Recette',
         list: [
           {
             name: 'TCM'
@@ -301,41 +328,20 @@ angular.module('cvApp')
         ]
       },
       {
+        head: 'Déploiement',
         class: ['no-foot'],
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
-        mdColspanMd: '1',
+        mdColspanMd: '2',
         mdRowspanMd: '1',
         mdColspanSm: '1',
-        head: 'Déploiement',
         list: [
           {
             name: 'Bamboo atlassian'
           },
           {
             name: 'Jenkins'
-          }
-        ]
-      },
-      {
-        class: ['no-foot'],
-        mdColspan: '1',
-        mdRowspan: '1',
-        mdColspanLg: '1',
-        mdColspanMd: '1',
-        mdRowspanMd: '1',
-        mdColspanSm: '1',
-        head: 'Suivi',
-        list: [
-          {
-            name: 'Relation client'
-          },
-          {
-            name: 'Animation de réunion'
-          },
-          {
-            name: 'Suivi des délais/charges'
           }
         ]
       }
