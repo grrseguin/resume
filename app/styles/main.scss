@@ -1,15 +1,14 @@
 // bower:scss
 // endbower
+@import "compass/css3";
 @import "compass/utilities/color/contrast";
 * {
 	font-family: "trebuchet ms", arial, sans-serif;
 }
 
-.face {
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  width: 48px;
-  margin: 16px;
+.sticker{
+	@include border-top-radius(25pt);
+  margin: 8px;
 }
 $gray-lightness: 75%;
 md-grid-tile.gray {

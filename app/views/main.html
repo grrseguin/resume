@@ -55,21 +55,26 @@
 </div>
 <md-toolbar class="md-theme-light">
   <h2 class="md-toolbar-tools">
-    <span>Expériences professionnelles</span>
+    <span>Expériences professionnelles & Formation</span>
   </h2>
 </md-toolbar>
 <div>
   <md-list>
     <md-list-item class="md-2-line" ng-repeat="job in main.jobs">
       <a ng-href="{{job.link}}" target="_blank">
-        <img ng-src="{{job.face}}" class="face" alt="{{job.what}}">
+        <img ng-src="{{job.face}}" class="sticker" alt="{{job.what}}">
       </a>
       <div class="md-list-item-text">
-        <h3 ng-bind="job.what"></h3>
-        <h4 ng-bind="job.who"></h4>
+        <h3 layout="row" layout-align="space-around">
+          <span ng-bind="job.what"></span>
+          <span ng-bind="job.who"></span>
+        </h3>
+        <h4 layout="row" layout-align="space-around">
+          <span ng-bind="job.role"></span>
+          <span ng-bind="job.when"></span>
+        </h4>
       </div>
       <div class="md-list-item-text">
-        <p ng-bind="job.when"></p>
         <p ng-bind="job.notes"></p>
       </div>
       <md-divider md-inset ng-if="!$last"></md-divider>

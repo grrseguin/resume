@@ -348,19 +348,40 @@ angular.module('cvApp')
     ];
     this.jobs = [
       {
-        face: 'https://material.angularjs.org/0.11.2/img/list/60.jpeg',
         what: 'Anagène v3',
+        who: 'Réseau CANOPÉ',
+        role: 'Développeur',
+        face: 'http://lorempixel.com/120/60/business/1',
+        link: '//anagene.reseau-canope.fr',
         when: 'sept. 2013 / dec. 2015',
-        who: 'Réseau CANOPE',
-        notes: 'Application pédagogique : comparaison de séquences A.D.N.'
+        notes: 'Application pédagogique : comparaison de séquences A.D.N. - @ aYaline'
       },
       {
-        face: 'https://material.angularjs.org/0.11.2/img/list/60.jpeg',
         what: 'Espace personnel',
-        link: 'http://monespace.mapa-assurances.fr',
-        when: 'sept. 2012 / sept. 2013',
         who: 'MAPA Assurances',
-        notes: 'Accès personnel aux services MAPA'
+        role: 'Développeur',
+        face: 'http://lorempixel.com/120/60/business/2',
+        link: '//monespace.mapa-assurances.fr',
+        when: 'sept. 2012 / sept. 2013',
+        notes: 'Accès personnel aux services MAPA - @ aYaline'
+      },
+      {
+        what: 'enpaysdelaloire.com',
+        who: 'Société publique régionale',
+        role: 'Chef de projet',
+        face: 'http://lorempixel.com/120/60/business/3',
+        link: '//enpaysdelaloire.com',
+        when: 'oct. 2011 / sept. 2013',
+        notes: 'Vitrine touristique - @ aYaline'
+      },
+      {
+        what: 'Jobinnnovation',
+        who: 'Etincel',
+        role: 'Chef de projet',
+        face: 'images/jobinnovation.png',
+        // link: '//ms.ayaline.com/jobinnovation/site',
+        when: 'oct. 2009 / sept. 2012',
+        notes: 'Plate-forme de réseau social professionnel - @ aYaline'
       }
     ];
   });
