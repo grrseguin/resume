@@ -11,14 +11,14 @@ angular.module('cvApp')
   .controller('HeaderCtrl', function( $scope ){
     $scope.subList = [
       {
-        title: 'disponible en septembre 2015',
+        title: 'Disponible en janvier 2016',
         classList: [ 'md-primary' ]
       },
       {
-        title: '37 ans'
+        title: '38 ans'
       },
       {
-        title: 'français'
+        title: 'Français'
       },
       {
         title: '12 ans d\'expérience',
@@ -32,6 +32,9 @@ angular.module('cvApp')
         title: 'grrseguin@gmail.com',
         classList: ['width-fix'],
         onClick: 'mailto:grrseguin@gmail.com'
+      },
+      {
+        title: 'Futsal & badminton',
       }
     ];
   });

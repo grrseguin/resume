@@ -16,16 +16,19 @@ header {
     @include contrasted( hsla( 0, 0, 0, 0.5 ));
     > div:first-child{
       @include flex-wrap(wrap);
+      img{
+        margin: 0 8px;
+      }
       .avatar{
         @include border-radius(25pt);
       }
       h1{
         font-family: 'Ceviche One', cursive;
-        margin: 0;
+        margin: 0 8px;
       }
       h2{
         font-family: 'Audiowide', cursive;
-        margin: 0;
+        margin: 0 8px;
       }
     }
     md-list{
