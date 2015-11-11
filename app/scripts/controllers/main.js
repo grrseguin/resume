@@ -351,7 +351,7 @@ angular.module('cvApp')
         what: 'Anagène v3',
         who: 'Réseau CANOPÉ',
         role: 'Développeur',
-        face: 'http://lorempixel.com/120/60/business/1',
+        face: 'images/anagene.png',
         link: '//anagene.reseau-canope.fr',
         when: 'sept. 2013 / dec. 2015',
         notes: 'Application pédagogique : comparaison de séquences A.D.N. - @ aYaline'
@@ -360,7 +360,7 @@ angular.module('cvApp')
         what: 'Espace personnel',
         who: 'MAPA Assurances',
         role: 'Développeur',
-        face: 'http://lorempixel.com/120/60/business/2',
+        face: 'images/mapa.png',
         link: '//monespace.mapa-assurances.fr',
         when: 'sept. 2012 / sept. 2013',
         notes: 'Accès personnel aux services MAPA - @ aYaline'
@@ -369,7 +369,7 @@ angular.module('cvApp')
         what: 'enpaysdelaloire.com',
         who: 'Société publique régionale',
         role: 'Chef de projet',
-        face: 'http://lorempixel.com/120/60/business/3',
+        face: 'images/enpaysdelaloire.png',
         link: '//enpaysdelaloire.com',
         when: 'oct. 2011 / sept. 2013',
         notes: 'Vitrine touristique - @ aYaline'
