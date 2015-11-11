@@ -36,6 +36,10 @@ header {
       }
     }
   }
+  > em:last-child{
+    @include contrasted( hsla( 0, 0, 0, 0.5 ));
+    font-size: 12px;
+  }
 }
 @media (min-width: 960px) and (max-width: 1200px){
     header {

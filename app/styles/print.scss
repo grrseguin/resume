@@ -5,22 +5,53 @@
   [layout-padding]{
     padding: 2px;
   }
-  header > div:first-child > div:first-child{
-    margin: 0;
-    padding: 0;
+  header{
+    > div:first-child > div:first-child{
+      margin: 0;
+      padding: 0;
+      > img{
+        height: 25px;
+      }
+      .md-display-1{
+        font-size: 17px;
+        line-height: 20px;
+      }
+      .md-headline{
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    > em:last-child{
+      font-size: 6px;
+    }
   }
   md-list{
     padding: 0;
     md-list-item{
       min-height: initial;
+      > a:first-child{
+        img{
+          height: 30px;
+        }
+      }
+    }
+    md-list-item.md-2-line .md-list-item-text{
+      padding: 0;
+      h3{
+        margin: 6px 0;
+      }
+      // h4{
+      //   margin: 2px 0;
+      // }
     }
   }
   md-toolbar{
-    min-height: 32px;
+    min-height: 28px;
   }
   .md-toolbar-tools{
-    min-height: 32px;
-    height: 32px;
+    min-height: 28px;
+    height: 28px;
+    font-size: 16px
   }
   md-grid-list md-grid-tile{
     md-grid-tile-header,

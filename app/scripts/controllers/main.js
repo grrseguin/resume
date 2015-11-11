@@ -114,7 +114,7 @@ angular.module('cvApp')
             name: 'flexbox'
           },
           {
-            image: 'images/w3c.jpg',
+            image: 'images/html5.svg',
             name: 'SVG'
           }
         ]
@@ -367,7 +367,7 @@ angular.module('cvApp')
       },
       {
         what: 'enpaysdelaloire.com',
-        who: 'Société publique régionale',
+        who: 'S.P.R.',
         role: 'Chef de projet',
         face: 'images/enpaysdelaloire.png',
         link: '//enpaysdelaloire.com',

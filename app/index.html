@@ -23,7 +23,7 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
+    <header layout="row" layout-align="space-between end">
       <div ng-controller="HeaderCtrl" layout="column" layout-align="space-around">
         <div layout="row" layout-align="space-between center" layout-align-lg="space-around center" layout-align-md="space-around center" layout-align-sm="center center" layout-margin layout-padding layout-wrap>
           <img src="images/avatar.jpg" aria-label="Avatar" class="avatar">
@@ -38,6 +38,7 @@
           <md-list-item layout="row" layout-align="center" layout-margin layout-padding layout-wrap ng-repeat="subItem in subList" ng-class="subItem.classList" ng-click="subItem.onClick" ng-bind="subItem.title"></md-list-item>
         </md-list>
       </div>
+      <em layout-padding>Activité: Futsal & badminton</em>
     </header>
     <section ng-include="'views/main.html'" ng-controller="MainCtrl as main"></section>
     <footer></footer>
