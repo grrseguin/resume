@@ -1,4 +1,4 @@
-<div>
+<div layout-margin>
   <md-toolbar class="md-theme-light">
     <h2 class="md-toolbar-tools">
       <span>Qualifications techniques</span>
@@ -7,14 +7,14 @@
   <md-grid-list class="technical-skills"
     md-cols="11" md-cols-lg="11" md-cols-md="2" md-cols-sm="1"
     md-row-height="24:9" md-row-height-lg="24:9" md-row-height-md="18:5" md-row-height-sm="2:2"
-    md-gutter="12px" md-gutter-lg="6px" md-gutter-md="3px" md-gutter-sm="3px">
+    md-gutter="8px" md-gutter-lg="6px" md-gutter-md="3px" md-gutter-sm="3px">
     <md-grid-tile ng-repeat="technicalSkill in main.technicalSkills" ng-class="technicalSkill.class"
       md-colspan="{{technicalSkill.mdColspan}}" md-colspan-lg="{{technicalSkill.mdColspanLg}}" md-colspan-md="{{technicalSkill.mdColspanMd}}" md-colspan-sm="{{technicalSkill.mdColspanSm}}"
       md-rowspan="{{technicalSkill.mdRowspan}}" md-rowspan-md="{{technicalSkill.mdRowspanMd}}">
       <md-grid-tile-header ng-if="technicalSkill.head">
         <h3 ng-bind="technicalSkill.head"></h3>
       </md-grid-tile-header>
-      <md-chips ng-model="technicalSkill.list" readonly="true" class="with-icon">
+      <md-chips ng-model="technicalSkill.list" readonly="true" class="with-icon" layout-padding>
         <md-chip-template layout="row">
           <img ng-src="{{$chip.image}}" alt="{{$chip.name}}">
           <strong ng-bind="$chip.name"></strong>
@@ -26,7 +26,7 @@
     </md-grid-tile>
   </md-grid-list>
 </div>
-<div>
+<div layout-margin>
   <md-toolbar class="md-theme-light">
     <h2 class="md-toolbar-tools">
       <span>Qualifications orientées projet web</span>
@@ -35,14 +35,14 @@
   <md-grid-list class="project-skills"
     md-cols="6" md-cols-lg="1" md-cols-md="7" md-cols-sm="1"
     md-row-height="1:1" md-row-height-lg="2:2" md-row-height-md="3:2" md-row-height-sm="4:4"
-    md-gutter="12px" md-gutter-lg="6px" md-gutter-md="3px" md-gutter-sm="3px">
+    md-gutter="8px" md-gutter-lg="6px" md-gutter-md="3px" md-gutter-sm="3px">
     <md-grid-tile ng-repeat="projectSkill in main.projectSkills" ng-class="projectSkill.class"
       md-colspan="{{projectSkill.mdColspan}}" md-colspan-lg="{{projectSkill.mdColspanLg}}" md-colspan-md="{{projectSkill.mdColspanMd}}" md-colspan-sm="{{projectSkill.mdColspanSm}}"
       md-rowspan="{{projectSkill.mdRowspan}}" md-rowspan-md="{{projectSkill.mdRowspanMd}}">
       <md-grid-tile-header>
         <h3 ng-bind="projectSkill.head"></h3>
       </md-grid-tile-header>
-      <md-chips ng-model="projectSkill.list" readonly="true">
+      <md-chips ng-model="projectSkill.list" readonly="true" layout-padding>
         <md-chip-template layout="row">
           <strong ng-bind="$chip.name"></strong>
         </md-chip-template>
@@ -53,12 +53,12 @@
     </md-grid-tile>
   </md-grid-list>
 </div>
-<md-toolbar class="md-theme-light">
-  <h2 class="md-toolbar-tools">
-    <span>Expériences professionnelles & Formation</span>
-  </h2>
-</md-toolbar>
-<div>
+<div layout-margin>
+  <md-toolbar class="md-theme-light">
+    <h2 class="md-toolbar-tools">
+      <span>Expériences professionnelles & Formation</span>
+    </h2>
+  </md-toolbar>
   <md-list>
     <md-list-item class="md-2-line" ng-repeat="job in main.jobs">
       <a ng-href="{{job.link}}" target="_blank">
