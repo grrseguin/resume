@@ -16,8 +16,8 @@ angular.module('cvApp')
         mdColspan: '8',
         mdRowspan: '5',
         mdColspanLg: '8',
-        mdColspanMd: '10',
-        mdRowspanMd: '9',
+        mdColspanMd: '1',
+        mdRowspanMd: '3',
         mdColspanSm: '1',
         list: [
           {
@@ -77,8 +77,8 @@ angular.module('cvApp')
         mdColspan: '2',
         mdRowspan: '9',
         mdColspanLg: '2',
-        mdColspanMd: '10',
-        mdRowspanMd: '6',
+        mdColspanMd: '1',
+        mdRowspanMd: '2',
         mdColspanSm: '1',
         list: [
           {
@@ -125,8 +125,8 @@ angular.module('cvApp')
         mdColspan: '1',
         mdRowspan: '9',
         mdColspanLg: '1',
-        mdColspanMd: '10',
-        mdRowspanMd: '3',
+        mdColspanMd: '1',
+        mdRowspanMd: '1',
         mdColspanSm: '1',
         list: [
           {
@@ -149,8 +149,8 @@ angular.module('cvApp')
         mdColspan: '4',
         mdRowspan: '4',
         mdColspanLg: '4',
-        mdColspanMd: '10',
-        mdRowspanMd: '5',
+        mdColspanMd: '1',
+        mdRowspanMd: '1',
         mdColspanSm: '1',
         list: [
           {
@@ -189,8 +189,8 @@ angular.module('cvApp')
         mdColspan: '4',
         mdRowspan: '4',
         mdColspanLg: '4',
-        mdColspanMd: '10',
-        mdRowspanMd: '5',
+        mdColspanMd: '1',
+        mdRowspanMd: '1',
         mdColspanSm: '1',
         list: [
           {
@@ -228,7 +228,7 @@ angular.module('cvApp')
       {
         head: 'Conception',
         class: ['orange', 'no-foot'],
-        mdColspan: '1',
+        mdColspan: '2',
         mdRowspan: '1',
         mdColspanLg: '1',
         mdColspanMd: '3',
