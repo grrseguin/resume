@@ -231,7 +231,7 @@ angular.module('cvApp')
         mdColspan: '2',
         mdRowspan: '1',
         mdColspanLg: '1',
-        mdColspanMd: '3',
+        mdColspanMd: '6',
         mdRowspanMd: '3',
         mdColspanSm: '1',
         list: [
@@ -267,7 +267,7 @@ angular.module('cvApp')
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
-        mdColspanMd: '2',
+        mdColspanMd: '5',
         mdRowspanMd: '1',
         mdColspanSm: '1',
         list: [
@@ -288,7 +288,7 @@ angular.module('cvApp')
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
-        mdColspanMd: '2',
+        mdColspanMd: '4',
         mdRowspanMd: '3',
         mdColspanSm: '1',
         list: [
@@ -315,7 +315,7 @@ angular.module('cvApp')
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
-        mdColspanMd: '2',
+        mdColspanMd: '5',
         mdRowspanMd: '1',
         mdColspanSm: '1',
         list: [
@@ -333,7 +333,7 @@ angular.module('cvApp')
         mdColspan: '1',
         mdRowspan: '1',
         mdColspanLg: '1',
-        mdColspanMd: '2',
+        mdColspanMd: '5',
         mdRowspanMd: '1',
         mdColspanSm: '1',
         list: [
