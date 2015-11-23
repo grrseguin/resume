@@ -35,7 +35,17 @@
           </h2>
         </div>
         <md-list layout="row">
-          <md-list-item layout="row" layout-align="center" layout-margin layout-padding layout-wrap ng-repeat="subItem in subList" ng-class="subItem.classList" ng-click="subItem.onClick" ng-bind="subItem.title"></md-list-item>
+          <md-list-item layout="row" layout-align="center" layout-margin layout-padding layout-wrap ng-repeat="subItem in subList">
+            <md-button ng-if="subItem.icon" ng-href="{{subItem.onClick}}"
+                 title="Launch Google.com in new window"
+                 target="_blank"
+                 aria-label="Google.com"
+                 class="md-icon-button launch" >
+              <md-icon md-svg-icon="{{subItem.icon}}"></md-icon>
+            </md-button>
+            <div ng-class="subItem.classList" ng-bind="subItem.title" class="md-list-item-text">
+            </div>
+          </md-list-item>
         </md-list>
       </div>
       <!-- <em layout-padding>Activités: Futsal & badminton</em> -->

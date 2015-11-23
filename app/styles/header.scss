@@ -12,7 +12,7 @@ header {
   background-repeat: no-repeat;
   text-align: center;
   > div:first-child{
-    width: 50%;
+    width: 65%;
     @include contrasted( hsla( 0, 0, 0, 0.5 ));
     > div:first-child{
       @include flex-wrap(wrap);
@@ -36,6 +36,14 @@ header {
       > md-list-item{
         @include contrasted( hsla( 0, 0, 0, 0.3 ));
         word-break: break-word;
+        margin: 4px;
+        padding: 4px;
+        > a.md-button.md-icon-button{
+          margin: 0;
+          height: 36px;
+          line-height: 36px;
+          width: 36px;
+        }
       }
     }
   }

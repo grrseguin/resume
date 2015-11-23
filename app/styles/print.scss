@@ -6,19 +6,22 @@
     padding: 2px;
   }
   header{
-    > div:first-child > div:first-child{
-      margin: 0;
-      padding: 0;
-      > img{
-        height: 25px;
-      }
-      .md-display-1{
-        font-size: 17px;
-        line-height: 20px;
-      }
-      .md-headline{
-        font-size: 12px;
-        line-height: 16px;
+    > div:first-child{
+      width: 85%;
+      > div:first-child{
+        margin: 0;
+        padding: 0;
+        > img{
+          height: 25px;
+        }
+        .md-display-1{
+          font-size: 17px;
+          line-height: 20px;
+        }
+        .md-headline{
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
     > em:last-child{
@@ -33,6 +36,12 @@
         img{
           height: 30px;
         }
+      }
+      > a.md-button.md-icon-button{
+        margin: 0;
+        height: 32px;
+        line-height: 32px;
+        width: 24px;
       }
     }
     md-list-item.md-2-line .md-list-item-text{

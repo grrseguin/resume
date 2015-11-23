@@ -26,15 +26,18 @@ angular.module('cvApp')
       },
       {
         title: '06 87 03 61 54',
+        icon: 'images/phone.svg',
         onClick: 'callto:33687036154'
       },
       {
         title: 'grrseguin@gmail.com',
         classList: ['width-fix'],
+        icon: 'images/email.svg',
         onClick: 'mailto:grrseguin@gmail.com'
       },
       {
-        title: 'Futsal & badminton',
+        icon: 'images/sport.svg',
+        title: 'Futsal & badminton'
       }
     ];
   });
