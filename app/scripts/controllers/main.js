@@ -13,59 +13,71 @@ angular.module('cvApp')
       {
         head: 'Javascript',
         class: ['red'],
-        mdColspan: '8',
-        mdRowspan: '5',
+        mdColspan: '4',
+        mdRowspan: '7',
         mdColspanLg: '8',
         mdColspanMd: '1',
         mdRowspanMd: '3',
         mdColspanSm: '1',
         list: [
           {
-            image: 'images/angularjs.png',
+            // image: 'images/angularjs.png',
+            image: 'http://lorempixel.com/25/25/city/1/',
             name: 'AngularJS'
           },
           {
-            image: 'images/nodejs.png',
+            // image: 'images/nodejs.png',
+            image: 'http://lorempixel.com/25/25/city/2/',
             name: 'NodeJS'
           },
           {
-            image: 'images/d3js.png',
+            // image: 'images/d3js.png',
+            image: 'http://lorempixel.com/25/25/city/3/',
             name: 'D3JS'
           },
           {
-            image: 'images/karma.png',
+            // image: 'images/karma.png',
+            image: 'http://lorempixel.com/25/25/city/4/',
             name: 'Karma'
           },
           {
-            image: 'images/gmap.png',
+            // image: 'images/gmap.png',
+            image: 'http://lorempixel.com/25/25/city/5/',
             name: 'Gmap'
           },
           {
-            image: 'images/protractor.png',
+            // image: 'images/protractor.png',
+            image: 'http://lorempixel.com/25/25/city/6/',
             name: 'Protractor'
           },
           {
-            image: 'images/yeoman.png',
+            // image: 'images/yeoman.png',
+            image: 'http://lorempixel.com/25/25/city/7/',
             name: 'Yeoman'
           },
           {
-            image: 'images/gruntjs.png',
+            // image: 'images/gruntjs.png',
+            image: 'http://lorempixel.com/25/25/city/8/',
             name: 'GruntJS'
           },
           {
-            image: 'images/bower.png',
+            // image: 'images/bower.png',
+            image: 'http://lorempixel.com/25/25/city/9/',
             name: 'Bower'
           },
           {
-            image: 'images/jquery.jpeg',
+            // image: 'images/jquery.jpeg',
+            image: 'http://lorempixel.com/25/25/city/0/',
             name: 'jQuery'
           },
           {
-            image: 'images/reactjs.jpg',
+            // image: 'images/reactjs.jpg',
+            image: 'http://lorempixel.com/25/25/city/1/',
             name: 'ReactJS'
           },
           {
-            image: 'images/lodash.jpeg',
+            // image: 'images/lodash.jpeg',
+            image: 'http://lorempixel.com/25/25/city/2/',
             name: 'Lodash'
           }
         ],
@@ -74,47 +86,56 @@ angular.module('cvApp')
       {
         head: 'HTML & CSS',
         class: ['yellow', 'no-foot'],
-        mdColspan: '2',
-        mdRowspan: '9',
+        mdColspan: '3',
+        mdRowspan: '7',
         mdColspanLg: '2',
         mdColspanMd: '1',
         mdRowspanMd: '2',
         mdColspanSm: '1',
         list: [
           {
-            image: 'images/css3.png',
+            // image: 'images/css3.png',
+            image: 'http://lorempixel.com/25/25/city/3/',
             name: 'Media Query'
           },
           {
-            image: 'images/compass.png',
+            // image: 'images/compass.png',
+            image: 'http://lorempixel.com/25/25/city/4/',
             name: 'Compass'
           },
           {
-            image: 'images/css3.png',
+            // image: 'images/css3.png',
+            image: 'http://lorempixel.com/25/25/city/5/',
             name: 'Transition'
           },
           {
-            image: 'images/html5.svg',
+            // image: 'images/html5.svg',
+            image: 'http://lorempixel.com/25/25/city/6/',
             name: 'WAI-ARIA'
           },
           {
-            image: 'images/css3.png',
+            // image: 'images/css3.png',
+            image: 'http://lorempixel.com/25/25/city/7/',
             name: 'Box-sizing'
           },
           {
-            image: 'images/html5.svg',
+            // image: 'images/html5.svg',
+            image: 'http://lorempixel.com/25/25/city/8/',
             name: 'localStorage'
           },
           {
-            image: 'images/w3c.jpg',
+            // image: 'images/w3c.jpg',
+            image: 'http://lorempixel.com/25/25/city/9/',
             name: 'XSLT / DTD'
           },
           {
-            image: 'images/css3.png',
+            // image: 'images/css3.png',
+            image: 'http://lorempixel.com/25/25/city/0/',
             name: 'flexbox'
           },
           {
-            image: 'images/html5.svg',
+            // image: 'images/html5.svg',
+            image: 'http://lorempixel.com/25/25/city/1/',
             name: 'SVG'
           }
         ]
@@ -123,103 +144,120 @@ angular.module('cvApp')
         head: 'CVS',
         class: ['purple', 'no-foot'],
         mdColspan: '1',
-        mdRowspan: '9',
+        mdRowspan: '7',
         mdColspanLg: '1',
         mdColspanMd: '1',
         mdRowspanMd: '1',
         mdColspanSm: '1',
         list: [
           {
-            image: 'images/git.png',
+            // image: 'images/git.png',
+            image: 'http://lorempixel.com/25/25/city/2/',
             name: 'Git'
           },
           {
-            image: 'images/github.png',
+            // image: 'images/github.png',
+            image: 'http://lorempixel.com/25/25/city/3/',
             name: 'Github'
           },
           {
-            image: 'images/tortoise_svn.jpg',
+            // image: 'images/tortoise_svn.jpg',
+            image: 'http://lorempixel.com/25/25/city/4/',
             name: 'SVN'
-          }
-        ]
-      },
-      {
-        head: 'PHP',
-        class: ['cyan', 'no-foot'],
-        mdColspan: '4',
-        mdRowspan: '4',
-        mdColspanLg: '4',
-        mdColspanMd: '1',
-        mdRowspanMd: '1',
-        mdColspanSm: '1',
-        list: [
-          {
-            image: 'images/ez_publish.png',
-            name: 'eZ publish'
-          },
-          {
-            image: 'images/symfony2.png',
-            name: 'Symfony 2'
-          },
-          {
-            image: 'images/spip.png',
-            name: 'Spip'
-          },
-          {
-            image: 'images/typo3.png',
-            name: 'Typo 3'
-          },
-          {
-            image: 'images/php.jpg',
-            name: 'cURL'
-          },
-          {
-            image: 'images/smarty.jpg',
-            name: 'Smarty'
-          },
-          {
-            image: 'images/php.jpg',
-            name: 'xPath'
           }
         ]
       },
       {
         head: 'Système',
         class: ['green', 'no-foot'],
-        mdColspan: '4',
-        mdRowspan: '4',
+        mdColspan: '2',
+        mdRowspan: '7',
         mdColspanLg: '4',
         mdColspanMd: '1',
         mdRowspanMd: '1',
         mdColspanSm: '1',
         list: [
           {
-            image: 'images/centOS.png',
+            // image: 'images/centOS.png',
+            image: 'http://lorempixel.com/25/25/city/2/',
             name: 'centOS'
           },
           {
-            image: 'images/debian.png',
+            // image: 'images/debian.png',
+            image: 'http://lorempixel.com/25/25/city/3/',
             name: 'Debian'
           },
           {
-            image: 'images/apache.gif',
+            // image: 'images/apache.gif',
+            image: 'http://lorempixel.com/25/25/city/4/',
             name: 'Apache 2'
           },
           {
-            image: 'images/mysql.png',
+            // image: 'images/mysql.png',
+            image: 'http://lorempixel.com/25/25/city/5/',
             name: 'MySQL'
           },
           {
-            image: 'images/unix.jpg',
+            // image: 'images/unix.jpg',
+            image: 'http://lorempixel.com/25/25/city/6/',
             name: 'Shell'
           },
           {
-            image: 'images/solr.gif',
+            // image: 'images/solr.gif',
+            image: 'http://lorempixel.com/25/25/city/7/',
             name: 'Solr'
           },
           {
-            image: 'images/perl.gif',
+            // image: 'images/perl.gif',
+            image: 'http://lorempixel.com/25/25/city/8/',
             name: 'Perl'
+          }
+        ]
+      },
+      {
+        head: 'PHP',
+        class: ['cyan', 'no-foot'],
+        mdColspan: '2',
+        mdRowspan: '7',
+        mdColspanLg: '4',
+        mdColspanMd: '1',
+        mdRowspanMd: '1',
+        mdColspanSm: '1',
+        list: [
+          {
+            // image: 'images/ez_publish.png',
+            image: 'http://lorempixel.com/25/25/city/5/',
+            name: 'eZ publish'
+          },
+          {
+            // image: 'images/symfony2.png',
+            image: 'http://lorempixel.com/25/25/city/6/',
+            name: 'Symfony 2'
+          },
+          {
+            // image: 'images/spip.png',
+            image: 'http://lorempixel.com/25/25/city/7/',
+            name: 'Spip'
+          },
+          {
+            // image: 'images/typo3.png',
+            image: 'http://lorempixel.com/25/25/city/8/',
+            name: 'Typo 3'
+          },
+          {
+            // image: 'images/php.jpg',
+            image: 'http://lorempixel.com/25/25/city/9/',
+            name: 'cURL'
+          },
+          {
+            // image: 'images/smarty.jpg',
+            image: 'http://lorempixel.com/25/25/city/0/',
+            name: 'Smarty'
+          },
+          {
+            // image: 'images/php.jpg',
+            image: 'http://lorempixel.com/25/25/city/1/',
+            name: 'xPath'
           }
         ]
       }

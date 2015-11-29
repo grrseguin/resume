@@ -113,11 +113,15 @@ md-grid-tile md-grid-tile {
 md-chips .md-chips{
   box-shadow: none;
 }
+.md-chips .md-chip{
+  height: 25px;
+	line-height: 25px;
+}
 .with-icon .md-chip{
   padding-left: 0;
 }
 .with-icon .md-chip-content img{
-  height: 32px;
+  height: 25px;
   border-radius: 16px;
 }
 .with-icon .md-chip-content strong{
