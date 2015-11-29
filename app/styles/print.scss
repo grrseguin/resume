@@ -1,10 +1,4 @@
 @media only print{
-  [layout-margin]{
-    margin: 1px;
-  }
-  [layout-padding]{
-    padding: 2px;
-  }
   header{
     > div:first-child{
       width: 85%;
@@ -72,13 +66,17 @@
     margin-top: 28px;
   }
   .md-chips .md-chip{
-    line-height: 25px;
-    height: 25px;
-    margin: 4px 4px 0 0;
-    padding: 0 4px 0 0;
+    line-height: 12px;
+    height: 12px;
+    margin: 2px 2px 0 0;
+    padding: 0 2px 0 0;
     img{
-      height: 25px;
-      width: 25px;
+      height: 12px;
+      width: 12px;
     }
+    strong{
+      margin-left: 4px;
+    }
+    font-size: 6px;
   }
 }
