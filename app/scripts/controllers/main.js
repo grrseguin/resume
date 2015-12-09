@@ -266,7 +266,7 @@ angular.module('cvApp')
       {
         head: 'Conception',
         class: ['orange', 'no-foot'],
-        mdColspan: '2',
+        mdColspan: '4',
         mdRowspan: '1',
         mdColspanLg: '1',
         mdColspanMd: '6',
@@ -323,7 +323,7 @@ angular.module('cvApp')
       {
         head: 'Suivi',
         class: ['gray', 'no-foot'],
-        mdColspan: '1',
+        mdColspan: '3',
         mdRowspan: '1',
         mdColspanLg: '1',
         mdColspanMd: '4',
@@ -368,7 +368,7 @@ angular.module('cvApp')
       {
         head: 'Déploiement',
         class: ['brown', 'no-foot'],
-        mdColspan: '1',
+        mdColspan: '2',
         mdRowspan: '1',
         mdColspanLg: '1',
         mdColspanMd: '5',
