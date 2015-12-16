@@ -21,63 +21,51 @@ angular.module('cvApp')
         mdColspanSm: '1',
         list: [
           {
-            // image: 'images/angularjs.png',
-            image: 'http://lorempixel.com/25/25/city/1/',
+            image: 'images/technic/angularjs.png',
             name: 'AngularJS'
           },
           {
-            // image: 'images/nodejs.png',
-            image: 'http://lorempixel.com/25/25/city/2/',
+            image: 'images/technic/nodejs.png',
             name: 'NodeJS'
           },
           {
-            // image: 'images/d3js.png',
-            image: 'http://lorempixel.com/25/25/city/3/',
+            image: 'images/technic/d3js.png',
             name: 'D3JS'
           },
           {
-            // image: 'images/karma.png',
-            image: 'http://lorempixel.com/25/25/city/4/',
+            image: 'images/technic/karma.png',
             name: 'Karma'
           },
           {
-            // image: 'images/gmap.png',
-            image: 'http://lorempixel.com/25/25/city/5/',
+            image: 'images/technic/gmap.png',
             name: 'Gmap'
           },
           {
-            // image: 'images/protractor.png',
-            image: 'http://lorempixel.com/25/25/city/6/',
+            image: 'images/technic/protractor.png',
             name: 'Protractor'
           },
           {
-            // image: 'images/yeoman.png',
-            image: 'http://lorempixel.com/25/25/city/7/',
+            image: 'images/technic/yeoman.png',
             name: 'Yeoman'
           },
           {
-            // image: 'images/gruntjs.png',
-            image: 'http://lorempixel.com/25/25/city/8/',
+            image: 'images/technic/gruntjs.png',
             name: 'GruntJS'
           },
           {
-            // image: 'images/bower.png',
-            image: 'http://lorempixel.com/25/25/city/9/',
+            image: 'images/technic/bower.png',
             name: 'Bower'
           },
           {
-            // image: 'images/jquery.jpeg',
-            image: 'http://lorempixel.com/25/25/city/0/',
+            image: 'images/technic/jquery.jpeg',
             name: 'jQuery'
           },
           {
-            // image: 'images/reactjs.jpg',
-            image: 'http://lorempixel.com/25/25/city/1/',
+            image: 'images/technic/reactjs.jpg',
             name: 'ReactJS'
           },
           {
-            // image: 'images/lodash.jpeg',
-            image: 'http://lorempixel.com/25/25/city/2/',
+            image: 'images/technic/lodash.jpeg',
             name: 'Lodash'
           }
         ],
@@ -94,48 +82,39 @@ angular.module('cvApp')
         mdColspanSm: '1',
         list: [
           {
-            // image: 'images/css3.png',
-            image: 'http://lorempixel.com/25/25/city/3/',
+            image: 'images/technic/css3.png',
             name: 'Media Query'
           },
           {
-            // image: 'images/compass.png',
-            image: 'http://lorempixel.com/25/25/city/4/',
+            image: 'images/technic/compass.png',
             name: 'Compass'
           },
           {
-            // image: 'images/css3.png',
-            image: 'http://lorempixel.com/25/25/city/5/',
+            image: 'images/technic/css3.png',
             name: 'Transition'
           },
           {
-            // image: 'images/html5.svg',
-            image: 'http://lorempixel.com/25/25/city/6/',
+            image: 'images/technic/html5.svg',
             name: 'WAI-ARIA'
           },
           {
-            // image: 'images/css3.png',
-            image: 'http://lorempixel.com/25/25/city/7/',
+            image: 'images/technic/css3.png',
             name: 'Box-sizing'
           },
           {
-            // image: 'images/html5.svg',
-            image: 'http://lorempixel.com/25/25/city/8/',
+            image: 'images/technic/html5.svg',
             name: 'localStorage'
           },
           {
-            // image: 'images/w3c.jpg',
-            image: 'http://lorempixel.com/25/25/city/9/',
+            image: 'images/technic/w3c.jpg',
             name: 'XSLT / DTD'
           },
           {
-            // image: 'images/css3.png',
-            image: 'http://lorempixel.com/25/25/city/0/',
+            image: 'images/technic/css3.png',
             name: 'flexbox'
           },
           {
-            // image: 'images/html5.svg',
-            image: 'http://lorempixel.com/25/25/city/1/',
+            image: 'images/technic/html5.svg',
             name: 'SVG'
           }
         ]
@@ -151,18 +130,15 @@ angular.module('cvApp')
         mdColspanSm: '1',
         list: [
           {
-            // image: 'images/git.png',
-            image: 'http://lorempixel.com/25/25/city/2/',
+            image: 'images/technic/git.png',
             name: 'Git'
           },
           {
-            // image: 'images/github.png',
-            image: 'http://lorempixel.com/25/25/city/3/',
+            image: 'images/technic/github.png',
             name: 'Github'
           },
           {
-            // image: 'images/tortoise_svn.jpg',
-            image: 'http://lorempixel.com/25/25/city/4/',
+            image: 'images/technic/tortoise_svn.jpg',
             name: 'SVN'
           }
         ]
@@ -178,38 +154,31 @@ angular.module('cvApp')
         mdColspanSm: '1',
         list: [
           {
-            // image: 'images/centOS.png',
-            image: 'http://lorempixel.com/25/25/city/2/',
+            image: 'images/technic/centOS.png',
             name: 'centOS'
           },
           {
-            // image: 'images/debian.png',
-            image: 'http://lorempixel.com/25/25/city/3/',
+            image: 'images/technic/debian.png',
             name: 'Debian'
           },
           {
-            // image: 'images/apache.gif',
-            image: 'http://lorempixel.com/25/25/city/4/',
+            image: 'images/technic/apache.gif',
             name: 'Apache 2'
           },
           {
-            // image: 'images/mysql.png',
-            image: 'http://lorempixel.com/25/25/city/5/',
+            image: 'images/technic/mysql.png',
             name: 'MySQL'
           },
           {
-            // image: 'images/unix.jpg',
-            image: 'http://lorempixel.com/25/25/city/6/',
+            image: 'images/technic/unix.jpg',
             name: 'Shell'
           },
           {
-            // image: 'images/solr.gif',
-            image: 'http://lorempixel.com/25/25/city/7/',
+            image: 'images/technic/solr.gif',
             name: 'Solr'
           },
           {
-            // image: 'images/perl.gif',
-            image: 'http://lorempixel.com/25/25/city/8/',
+            image: 'images/technic/perl.gif',
             name: 'Perl'
           }
         ]
@@ -225,38 +194,31 @@ angular.module('cvApp')
         mdColspanSm: '1',
         list: [
           {
-            // image: 'images/ez_publish.png',
-            image: 'http://lorempixel.com/25/25/city/5/',
+            image: 'images/technic/ez_publish.png',
             name: 'eZ publish'
           },
           {
-            // image: 'images/symfony2.png',
-            image: 'http://lorempixel.com/25/25/city/6/',
+            image: 'images/technic/symfony2.png',
             name: 'Symfony 2'
           },
           {
-            // image: 'images/spip.png',
-            image: 'http://lorempixel.com/25/25/city/7/',
+            image: 'images/technic/spip.png',
             name: 'Spip'
           },
           {
-            // image: 'images/typo3.png',
-            image: 'http://lorempixel.com/25/25/city/8/',
+            image: 'images/technic/typo3.png',
             name: 'Typo 3'
           },
           {
-            // image: 'images/php.jpg',
-            image: 'http://lorempixel.com/25/25/city/9/',
+            image: 'images/technic/php.jpg',
             name: 'cURL'
           },
           {
-            // image: 'images/smarty.jpg',
-            image: 'http://lorempixel.com/25/25/city/0/',
+            image: 'images/technic/smarty.jpg',
             name: 'Smarty'
           },
           {
-            // image: 'images/php.jpg',
-            image: 'http://lorempixel.com/25/25/city/1/',
+            image: 'images/technic/php.jpg',
             name: 'xPath'
           }
         ]
