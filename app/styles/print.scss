@@ -1,4 +1,7 @@
 @media only print{
+  .md-list-item-text{
+    font-size: 12px;
+  }
   header{
     > div:first-child{
       width: 85%;
