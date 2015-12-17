@@ -20,9 +20,9 @@ angular.module('cvApp')
         mdColspanMd: '1',
         mdRowspanMd: '3',
         mdColspanSm: '1',
-        mdRowspanSm: '12',
+        mdRowspanSm: '4',
         mdColspanXs: '1',
-        mdRowspanXs: '12',
+        mdRowspanXs: '3',
         list: [
           {
             image: 'images/technic/angularjs.png',
@@ -85,9 +85,9 @@ angular.module('cvApp')
         mdColspanMd: '1',
         mdRowspanMd: '2',
         mdColspanSm: '1',
-        mdRowspanSm: '12',
+        mdRowspanSm: '4',
         mdColspanXs: '1',
-        mdRowspanXs: '12',
+        mdRowspanXs: '2',
         list: [
           {
             image: 'images/technic/css3.png',
@@ -136,10 +136,10 @@ angular.module('cvApp')
         mdRowspanLg: '12',
         mdColspanMd: '1',
         mdRowspanMd: '1',
-        mdColspanSm: '1',
-        mdRowspanSm: '12',
+        mdColspanSm: '2',
+        mdRowspanSm: '1',
         mdColspanXs: '1',
-        mdRowspanXs: '12',
+        mdRowspanXs: '1',
         list: [
           {
             image: 'images/technic/git.png',
@@ -164,10 +164,10 @@ angular.module('cvApp')
         mdRowspanLg: '12',
         mdColspanMd: '1',
         mdRowspanMd: '1',
-        mdColspanSm: '1',
-        mdRowspanSm: '12',
+        mdColspanSm: '2',
+        mdRowspanSm: '2',
         mdColspanXs: '1',
-        mdRowspanXs: '12',
+        mdRowspanXs: '2',
         list: [
           {
             image: 'images/technic/centOS.png',
@@ -208,10 +208,10 @@ angular.module('cvApp')
         mdRowspanLg: '12',
         mdColspanMd: '1',
         mdRowspanMd: '1',
-        mdColspanSm: '1',
-        mdRowspanSm: '12',
+        mdColspanSm: '2',
+        mdRowspanSm: '2',
         mdColspanXs: '1',
-        mdRowspanXs: '12',
+        mdRowspanXs: '2',
         list: [
           {
             image: 'images/technic/ez_publish.png',
@@ -250,14 +250,14 @@ angular.module('cvApp')
         class: ['orange', 'no-foot'],
         mdColspanXl: '4',
         mdRowspanXl: '1',
-        mdColspanLg: '1',
+        mdColspanLg: '2',
         mdRowspanLg: '1',
         mdColspanMd: '6',
         mdRowspanMd: '3',
-        mdColspanSm: '1',
-        mdRowspanSm: '1',
+        mdColspanSm: '2',
+        mdRowspanSm: '3',
         mdColspanXs: '1',
-        mdRowspanXs: '1',
+        mdRowspanXs: '2',
         list: [
           {
             name: 'Spéficifications fonctionnelles détaillées'
@@ -295,7 +295,7 @@ angular.module('cvApp')
         mdColspanMd: '5',
         mdRowspanMd: '1',
         mdColspanSm: '1',
-        mdRowspanSm: '1',
+        mdRowspanSm: '2',
         mdColspanXs: '1',
         mdRowspanXs: '1',
         list: [
@@ -320,9 +320,9 @@ angular.module('cvApp')
         mdColspanMd: '4',
         mdRowspanMd: '3',
         mdColspanSm: '1',
-        mdRowspanSm: '1',
+        mdRowspanSm: '3',
         mdColspanXs: '1',
-        mdRowspanXs: '1',
+        mdRowspanXs: '2',
         list: [
           {
             name: 'Relation client'
@@ -372,7 +372,7 @@ angular.module('cvApp')
         mdRowspanLg: '1',
         mdColspanMd: '5',
         mdRowspanMd: '1',
-        mdColspanSm: '1',
+        mdColspanSm: '2',
         mdRowspanSm: '1',
         mdColspanXs: '1',
         mdRowspanXs: '1',
