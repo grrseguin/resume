@@ -15,7 +15,6 @@ angular
     'ngAria',
     'ngCookies',
     'ngSanitize',
-    'ngTouch',
     'ngMaterial'
   ])
   .config(['$mdThemingProvider', function( $mdThemingProvider ){
