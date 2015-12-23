@@ -11,7 +11,7 @@ angular.module('cvApp')
   .controller('HeaderCtrl', function( $scope ){
     $scope.subList = [
       {
-        title: 'Disponible en janvier 2016',
+        title: 'Disponible en février 2016',
         classList: [ 'md-primary' ]
       },
       {

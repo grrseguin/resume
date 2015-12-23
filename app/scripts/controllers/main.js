@@ -422,6 +422,27 @@ angular.module('cvApp')
         // link: '//ms.ayaline.com/jobinnovation/site',
         when: 'oct. 2009 / sept. 2012',
         notes: 'Plate-forme de réseau social professionnel - @ aYaline'
+      },
+      {
+        what: 'Tierce Maintenance Applicative',
+        who: 'aYaline',
+        face: 'images/ayaline.png',
+        when: 'mars 2007 / sept. 2013',
+        notes: 'Gestion de la relation client, réalisation des spécifications techniques et fonctionnelles, conception et réalisation des développements - + de 40 clients'
+      },
+      {
+        who: 'CMA16',
+        role: 'Responsable informatique',
+        face: 'images/cma16.jpg',
+        when: 'dec. 2002 / mars 2007',
+        notes: 'Plan d’adressage IP, Administration Windows NT et 2003 server, terminal server, firewall Arkoon A200'
+      },
+      {
+        who: 'Sofraco glaces Paladine',
+        role: 'Responsable EDI et EAN13',
+        face: 'images/sofraco.jpeg',
+        when: 'sept. 2000 / juin 2001',
+        notes: 'EDIFACT, ATLAS 400, EANCOM, GENCOD'
       }
     ];
     this.formations = [
