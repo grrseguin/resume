@@ -16,7 +16,19 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach a list of technical skills to the controller', function () {
+    expect(MainCtrl.technicalSkills.length).toBeGreaterThan(1);
+  });
+
+  it('should attach a list of project skills to the controller', function () {
+    expect(MainCtrl.projectSkills.length).toBeGreaterThan(1);
+  });
+
+  it('should attach a list of jobs to the controller', function () {
+    expect(MainCtrl.jobs.length).toBeGreaterThan(1);
+  });
+
+  it('should attach a list of formations to the controller', function () {
+    expect(MainCtrl.formations.length).toBeGreaterThan(1);
   });
 });
