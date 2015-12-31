@@ -267,7 +267,14 @@ module.exports = function (grunt) {
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
+      js: ['<%= yeoman.dist %>/scripts/{,*/}*.js'],
       options: {
+        patterns: {
+          js: [
+            [/['"]\/?images\/([^'"]+)['"]/gm, 'Update the JS with the new img filenames'],
+            [/['"]\/?images\/technic\/([^'"]+)['"]/gm, 'Update the JS with the new img filenames']
+          ]
+        },
         assetsDirs: [
           '<%= yeoman.dist %>',
           '<%= yeoman.dist %>/images',
