@@ -28,7 +28,7 @@
   }
   md-list{
     padding: 0;
-    md-list-item{
+    > md-list-item.md-2-line{
       min-height: initial;
       > a:first-child{
         img{
