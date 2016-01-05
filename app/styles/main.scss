@@ -7,6 +7,12 @@
 }
 header[layout-margin]{
 	margin-bottom: 0;
+	> div:first-child{
+		margin: 0;
+	}
+	> em:last-child{
+		margin: 0;
+	}
 }
 md-toolbar{
 	margin-top: 24px;
