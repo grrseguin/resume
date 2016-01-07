@@ -141,8 +141,14 @@ md-chips .md-chips{
   margin-left: 8px;
 }
 
-md-list-item > a + .md-list-item-text{
-	margin: 0 8px;
+md-list-item {
+	> a + .md-list-item-text{
+		margin: 0 8px;
+	}
+	.md-list-item-text.cv-fix-last > p{
+		width: 7%;
+		margin-left: 1em;
+	}
 }
 
 .browsehappy {

@@ -90,8 +90,9 @@
       <!-- <a ng-href="{{formation.link}}" target="_blank">
         <img ng-src="{{formation.face}}" class="smile" alt="{{formation.what}}">
       </a> -->
-      <div layout="row" layout-align="space-between" class="md-list-item-text">
-        <h3 ng-bind="formation.what"></h3>
+      <div layout="row" layout-align="space-between" class="md-list-item-text cv-fix-last">
+        <h3 flex="80%" ng-bind="formation.what"></h3>
+        <h4 ng-bind="formation.where"></h4>
         <p ng-bind="formation.when"></p>
       </div>
       <md-divider md-inset ng-if="!$last"></md-divider>

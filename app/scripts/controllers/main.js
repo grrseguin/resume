@@ -448,26 +448,31 @@ angular.module('cvApp')
     this.formations = [
       {
         what: 'Programmation en Visual Basic .NET avec Microsoft .NET (réf. 2560)',
+        where: 'Bordeaux',
         when: 'Mai 2006',
         face: 'http://lorempixel.com/120/50/city/1/'
       },
       {
         what: 'Formation ingénieur en développement LOTUS et INTERNET',
+        where: 'Pôle universitaire Léonard-de-Vinci de Paris',
         when: '2001-2002',
         face: 'http://lorempixel.com/120/50/city/2/'
       },
       {
         what: 'DESS Système d’Information et Contrôle',
+        where: 'IAE de Poitiers',
         when: '2000-2001',
         face: 'http://lorempixel.com/120/50/city/3/'
       },
       {
         what: 'Maîtrise Administration et Gestion des Entreprises',
+        where: 'Université de Poitiers',
         when: '1998-1999',
         face: 'http://lorempixel.com/120/50/city/4/'
       },
       {
         what: 'Bac série ES',
+        where: 'Lycée Merleau-Ponty à Rochefort',
         when: '1994-1995',
         face: 'http://lorempixel.com/120/50/city/1/'
       }
