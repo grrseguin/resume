@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngMaterial'
   ])
-  .config(['$mdThemingProvider', function( $mdThemingProvider ){
+  .config(['$compileProvider', '$mdThemingProvider', function( $compileProvider, $mdThemingProvider ){
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|callto|mailto|file|javascript):/);
     $mdThemingProvider
       .theme('default')
       .primaryPalette('blue')
