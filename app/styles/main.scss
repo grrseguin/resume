@@ -142,6 +142,9 @@ md-chips .md-chips{
 }
 
 md-list-item {
+	> a{
+		margin:auto;
+	}
 	> a + .md-list-item-text{
 		margin: 0 8px;
 	}

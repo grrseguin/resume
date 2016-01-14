@@ -6,7 +6,7 @@
   </md-toolbar>
   <md-grid-list class="technical-skills"
     md-cols-xl="17" md-cols-lg="17" md-cols-md="2" md-cols-sm="2" md-cols-xs="1"
-    md-row-height-xl="25:8" md-row-height-lg="25:8" md-row-height-md="25:6" md-row-height-sm="15:5" md-row-height-xs="4:1"
+    md-row-height-xl="25:8" md-row-height-lg="25:8" md-row-height-md="25:6" md-row-height-sm="15:5" md-row-height-xs="5:2"
     md-gutter-xl="8px" md-gutter-lg="6px" md-gutter-md="3px" md-gutter-sm="3px" md-gutter-xs="2px">
     <md-grid-tile ng-repeat="technicalSkill in main.technicalSkills" ng-class="technicalSkill.class"
       md-colspan-xl="{{technicalSkill.mdColspanXl}}" md-colspan-lg="{{technicalSkill.mdColspanLg}}" md-colspan-md="{{technicalSkill.mdColspanMd}}" md-colspan-sm="{{technicalSkill.mdColspanSm}}" md-colspan-xs="{{technicalSkill.mdColspanXs}}"
@@ -34,7 +34,7 @@
   </md-toolbar>
   <md-grid-list class="project-skills"
     md-cols-xl="11" md-cols-lg="6" md-cols-md="15" md-cols-sm="2" md-cols-xs="1"
-    md-row-height-xl="6:7" md-row-height-lg="4:5" md-row-height-md="2:3" md-row-height-sm="15:5" md-row-height-xs="4:1"
+    md-row-height-xl="6:7" md-row-height-lg="4:5" md-row-height-md="2:3" md-row-height-sm="15:5" md-row-height-xs="11:5"
     md-gutter-xl="8px" md-gutter-lg="6px" md-gutter-md="3px" md-gutter-sm="3px" md-gutter-xs="3px">
     <md-grid-tile ng-repeat="projectSkill in main.projectSkills" ng-class="projectSkill.class"
       md-colspan-xl="{{projectSkill.mdColspanXl}}" md-colspan-lg="{{projectSkill.mdColspanLg}}" md-colspan-md="{{projectSkill.mdColspanMd}}" md-colspan-sm="{{projectSkill.mdColspanSm}}" md-colspan-xs="{{projectSkill.mdColspanXs}}"
@@ -60,16 +60,16 @@
     </h2>
   </md-toolbar>
   <md-list>
-    <md-list-item class="md-2-line" ng-repeat="job in main.jobs">
+    <md-list-item layout-xs="column" class="md-2-line" ng-repeat="job in main.jobs">
       <a ng-href="{{job.link}}" target="_blank">
         <img ng-src="{{job.face}}" class="sticker" alt="{{job.what}}">
       </a>
-      <div class="md-list-item-text" layout-padding>
-        <h3 layout="row" layout-align="space-between">
+      <div layout-xs="column" class="md-list-item-text" layout-padding>
+        <h3 layout="row" layout-sm="column" layout-xs="column" layout-align="space-between">
           <span ng-bind="job.what"></span>
           <span ng-bind="job.who"></span>
         </h3>
-        <h4 layout="row" layout-align="space-between">
+        <h4 layout="row" layout-sm="column" layout-xs="column" layout-align="space-between">
           <span ng-bind="job.role"></span>
           <span ng-bind="job.when"></span>
         </h4>
@@ -90,7 +90,7 @@
       <!-- <a ng-href="{{formation.link}}" target="_blank">
         <img ng-src="{{formation.face}}" class="smile" alt="{{formation.what}}">
       </a> -->
-      <div layout="row" layout-align="space-between" class="md-list-item-text cv-fix-last">
+      <div layout="row" layout-sm="column" layout-xs="column" layout-align="space-between" class="md-list-item-text cv-fix-last">
         <h3 flex="80%" ng-bind="formation.what"></h3>
         <h4 ng-bind="formation.where"></h4>
         <p ng-bind="formation.when"></p>
