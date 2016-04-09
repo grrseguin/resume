@@ -9,9 +9,13 @@
  */
 angular.module('cvApp')
   .controller('HeaderCtrl', function( $scope ){
+    var
+      months = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+      availabilityDate = new Date();
+    availabilityDate.setMonth( availabilityDate.getMonth() + 3);
     $scope.subList = [
       {
-        title: 'Disponible en février 2016',
+        title: 'Disponible en ' + months[availabilityDate.getMonth()] + ' ' + availabilityDate.getFullYear(),
         classList: [ 'md-primary' ]
       },
       {
