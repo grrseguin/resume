@@ -13,8 +13,6 @@ angular
   .module('cvApp', [
     'ngAnimate',
     'ngAria',
-    'ngCookies',
-    'ngSanitize',
     'ngMaterial'
   ])
   .config(['$compileProvider', '$mdThemingProvider', function( $compileProvider, $mdThemingProvider ){
