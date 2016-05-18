@@ -60,16 +60,16 @@
     </h2>
   </md-toolbar>
   <md-list>
-    <md-list-item layout-xs="column" class="md-2-line" ng-repeat="job in main.jobs">
+    <md-list-item class="md-2-line" ng-repeat="job in main.jobs">
       <a ng-href="{{job.link}}" target="_blank">
         <img ng-src="{{job.face}}" class="sticker" alt="{{job.what}}">
       </a>
       <div layout-xs="column" class="md-list-item-text" layout-padding>
-        <h3 layout="row" layout-sm="column" layout-xs="column" layout-align="space-between">
+        <h3 layout="row" layout-sm="column" layout-align="space-between">
           <span ng-bind="job.what"></span>
           <span ng-bind="job.who"></span>
         </h3>
-        <h4 layout="row" layout-sm="column" layout-xs="column" layout-align="space-between">
+        <h4 layout="row" layout-align="space-between">
           <span ng-bind="job.role"></span>
           <span ng-bind="job.when"></span>
         </h4>
@@ -90,7 +90,7 @@
       <!-- <a ng-href="{{formation.link}}" target="_blank">
         <img ng-src="{{formation.face}}" class="smile" alt="{{formation.what}}">
       </a> -->
-      <div layout="row" layout-sm="column" layout-xs="column" layout-align="space-between" class="md-list-item-text cv-fix-last">
+      <div layout="row" layout-sm="column" layout-align="space-between" class="md-list-item-text cv-fix-last">
         <h3 flex="80%" ng-bind="formation.what"></h3>
         <h4 ng-bind="formation.where"></h4>
         <p ng-bind="formation.when"></p>
