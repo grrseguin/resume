@@ -29,6 +29,10 @@ angular.module('cvApp')
             name: 'AngularJS'
           },
           {
+            image: 'images/technic/angularjs.png',
+            name: 'Angular Material'
+          },
+          {
             image: 'images/technic/nodejs.png',
             name: 'NodeJS'
           },
@@ -394,7 +398,8 @@ angular.module('cvApp')
         face: 'images/anagene.png',
         link: '//anagene.reseau-canope.fr',
         when: 'sept. 2013 / dec. 2015',
-        notes: 'Application pédagogique : comparaison de séquences A.D.N. - @ aYaline'
+        notes: 'Application pédagogique : comparaison de séquences A.D.N. - @ aYaline',
+        templateUrl: 'views/job/anagene.html'
       },
       {
         what: 'Espace personnel',
