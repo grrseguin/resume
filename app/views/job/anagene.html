@@ -1,11 +1,31 @@
 <h5>Fonctionnalités techniques</h5>
 <ul>
   <li>
-    Mode déconnecté :
+    mode déconnecté
     <ul>
       <li>persistance des données : utilisation de <i>$resource</i>, gestion de la mise à jour du cache, HTML5 Web Storage et compression</li>
       <li>transfert automatique des templates HTML vers un seul fichier JS</li>
       <li>conversion automatique des medias en base 64</li>
+      <li>détection automatique de la déconnexion internet</li>
+    </ul>
+  </li>
+  <li>
+    extranet
+    <ul>
+      <li>authentification HTTP, méthode <i>Digest</i> promise</li>
+      <li>promise <i>resolve</i> de l'objet <i>$routeProvider</i></li>
+      <li>CRUDS</li>
+      <li>import et parsage de fichiers</li>
+    </ul>
+  </li>
+  <li>visualisation et manipulation 3D avec WebGL</li>
+  <li>graphiques dynamiques avec D3.js (dot-plot, histogramme, arbre phylogénétique)</li>
+  <li>tour guidé de l'application</li>
+  <li>
+    statistiques
+    <ul>
+      <li>Google tag manager</li>
+      <li>suivi des profils utilisateurs</li>
     </ul>
   </li>
 </ul>
@@ -17,8 +37,12 @@
   <li>
     déploiement avec GruntJS
     <ul>
+      <li>serveur web</li>
+      <li>injection automatique des composants Bower dans l'application</li>
       <li>minification des scripts JS, CSS et des images</li>
+      <li>ajout automatique des prefixes CSS pour la compatibilité des navigateurs web</li>
       <li>concaténation des fichiers</li>
+      <li>utilisation de références CDN Google</li>
     </ul>
   </li>
   <li>gestion de version des librairies JS avec Bower</li>
@@ -26,7 +50,9 @@
 </ul>
 <h5>UX & UI</h5>
 <ul>
+  <li>x-editable</li>
   <li>contribution au module <i>angular-strap</i></li>
+  <li><i>upload</i> de fichiers (<i>Drag and Drop</i>)</li>
 </ul>
 <h5>Test</h5>
 <ul>
@@ -42,4 +68,5 @@
   <li>implémentation de <strong>ReactJS</strong> pour les listes longues</li>
   <li>utilisation de l'evènement $destroy</li>
   <li>transclusion</li>
+  <li><i>One-time binding</i></li>
 </ul>
