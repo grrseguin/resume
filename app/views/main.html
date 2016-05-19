@@ -75,7 +75,14 @@
         </h4>
       </div>
       <div class="md-list-item-text" layout-padding>
-        <p ng-bind="job.notes"></p>
+        <p layout="row">
+          <span ng-bind="job.notes" flex></span>
+          <md-button class="md-icon-button" aria-label="Share" ng-click="job.isFull = !job.isFull" ng-if="job.templateUrl">
+            <md-icon md-svg-icon="images/plus.svg" ng-hide="job.isFull"></md-icon>
+            <md-icon md-svg-icon="images/less.svg" ng-show="job.isFull"></md-icon>
+          </md-button>
+        </p>
+        <md-content flex ng-include="job.templateUrl" ng-if="job.isFull"></md-content>
       </div>
       <md-divider md-inset ng-if="!$last"></md-divider>
     </md-list-item>
