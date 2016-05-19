@@ -1,72 +1,140 @@
-<h5>Fonctionnalités techniques</h5>
-<ul>
-  <li>
-    mode déconnecté
-    <ul>
-      <li>persistance des données : utilisation de <i>$resource</i>, gestion de la mise à jour du cache, HTML5 Web Storage et compression</li>
-      <li>transfert automatique des templates HTML vers un seul fichier JS</li>
-      <li>conversion automatique des medias en base 64</li>
-      <li>détection automatique de la déconnexion internet</li>
-    </ul>
-  </li>
-  <li>
-    extranet
-    <ul>
-      <li>authentification HTTP, méthode <i>Digest</i> promise</li>
-      <li>promise <i>resolve</i> de l'objet <i>$routeProvider</i></li>
-      <li>CRUDS</li>
-      <li>import et parsage de fichiers</li>
-    </ul>
-  </li>
-  <li>visualisation et manipulation 3D avec WebGL</li>
-  <li>graphiques dynamiques avec D3.js (dot-plot, histogramme, arbre phylogénétique)</li>
-  <li>tour guidé de l'application</li>
-  <li>
-    statistiques
-    <ul>
-      <li>Google tag manager</li>
-      <li>suivi des profils utilisateurs</li>
-    </ul>
-  </li>
-</ul>
-<h5>Architecture applicative</h5>
-<ul>
-  <li>construite avec Yeoman</li>
-  <li>architecture REST</li>
-  <li>développement d'un module SSO pour serveur CAS (utilisation d'une machine à états finis)</li>
-  <li>
-    déploiement avec GruntJS
-    <ul>
-      <li>serveur web</li>
-      <li>injection automatique des composants Bower dans l'application</li>
-      <li>minification des scripts JS, CSS et des images</li>
-      <li>ajout automatique des prefixes CSS pour la compatibilité des navigateurs web</li>
-      <li>concaténation des fichiers</li>
-      <li>utilisation de références CDN Google</li>
-    </ul>
-  </li>
-  <li>gestion de version des librairies JS avec Bower</li>
-  <li>execution de tests automatiques avec Karma et Jasmine</li>
-</ul>
-<h5>UX & UI</h5>
-<ul>
-  <li>x-editable</li>
-  <li>contribution au module <i>angular-strap</i></li>
-  <li><i>upload</i> de fichiers (<i>Drag and Drop</i>)</li>
-</ul>
-<h5>Test</h5>
-<ul>
-  <li>écriture de tests unitiares automatiques de non regession pour les services, contrôleurs et directives</li>
-  <li>injection de différents jeux de données</li>
-  <li>écriture de tests fonctionnels</li>
-  <li>gestion des requêtes asynchrones avec <i>$httpBackend</i></li>
-</ul>
-<h5>Performance</h5>
-<ul>
-  <li>utilisation d'AngularJS Batarang</li>
-  <li>virtual scroll</li>
-  <li>implémentation de <strong>ReactJS</strong> pour les listes longues</li>
-  <li>utilisation de l'evènement $destroy</li>
-  <li>transclusion</li>
-  <li><i>One-time binding</i></li>
-</ul>
+<div layout-xs="column" class="md-list-item-text" layout-padding>
+  <h3 layout="row" layout-sm="column" layout-xs="column" layout-align="space-between">
+    <span ng-bind="job.what"></span>
+    <span ng-bind="job.who"></span>
+  </h3>
+  <h4 layout="row" layout-sm="column" layout-xs="column" layout-align="space-between">
+    <span ng-bind="job.role"></span>
+    <span ng-bind="job.when"></span>
+  </h4>
+</div>
+<div class="md-list-item-text" layout-padding>
+  <p layout="row">
+    <span ng-bind="job.notes" flex></span>
+    <md-button class="md-icon-button" aria-label="Share" ng-click="job.isFull = !job.isFull" ng-if="job.templateUrl">
+      <md-icon md-svg-icon="images/plus.svg" ng-hide="job.isFull"></md-icon>
+      <md-icon md-svg-icon="images/less.svg" ng-show="job.isFull"></md-icon>
+    </md-button>
+  </p>
+</div>
+  <h3>Fonctionnalités techniques.</h3>
+  <h4>Le mode déconnecté permet l'utilisation de l'application sans connexion internet.</h4>
+  <p>
+    L'utilisation du service <i>$resource</i> d'<i>AngularJS</i>,
+    la gestion de la mise à jour du cache, le HTML5 Web Storage et la compression
+    via d'autres modules de la communauté d'AngularJS) permet la persistance des données
+    dans un navigateur internet.
+  </p>
+  <p>
+    Le transfert automatique des templates HTML vers un seul fichier JS
+    (réalisé via un package de <i>Node.js</i>) evite les requêtes HTTP lors de
+    l'utilisation de l'application.
+  </p>
+  <p>
+    La conversion automatique des medias en base 64 evite également les requêtes HTTP.
+  </p>
+  <p>
+    La détection automatique de la déconnexion à internet permet de basculer
+    l'application en mode dégradé et d'en informer l'utilisateur.
+  </p>
+  <h4>Un extranet.</h4>
+  <p>
+    La méthode <i>Digest</i> de l'authentification HTTP permet de sécurisé
+    tous les appels de l'application vers le serveur. Cela permet également d'éviter
+    la resaisie du mot de passe de l'utilisateur lors de ses prochaines utilisations.
+  </p>
+  <p>
+    L'accès de chaque vues de l'application est contrôlé par la promesse <i>resolve</i>
+    de l'objet <i>$routeProvider</i>.
+  </p>
+  <p>
+    Certains profils utilisateurs peuvent réaliser des opérations CRUDS.
+  </p>
+  <p>
+    L'import et le parsage de fichiers spécifiques permet de faciliter la saisie des utilisateurs.
+  </p>
+  <h4>Visualisation et manipulation 3D avec WebGL.</h4>
+  <h4>Graphiques dynamiques avec <i>D3.js</i> (dot-plot, histogramme, arbre phylogénétique).</h4>
+  <h4>Tour guidé de l'application.</h4>
+  <p>
+    Réaliser via un module de la communauté d'AngularJS.
+  </p>
+  <h4>Statistiques</h4>
+  <p>
+    Utilisation de Google tag manager via un module de la communauté d'AngularJS.
+    Cela permet également de suivre finement chaque profils utilisateurs.
+  </p>
+  <h4>Architecture applicative.</h4>
+  <p>
+    Anagène a été construite avec un générateur de <i>Yeoman</i>.
+    Il permet notamment d'assurer l'ajout de contrôleur ou autres.
+  </p>
+  <p>
+    L'application est basée sur une architecture REST.
+  </p>
+  <p>
+    Le développement d'un module SSO pour serveur CAS (utilisation d'une machine à états finis)
+    permet l'interconnexion avec un annuaire d'utilisateurs.
+  </p>
+  <p>
+    <i>GruntJS</i> fournie un serveur web local qui permet de contrôler instantanément
+     le comportement de l'application sur plusieurs navigateurs internet.<br>
+     Il permet également de facilité le déploiement de l'application au travers de
+     différents services :
+     l'injection automatique des composants Bower dans l'application,
+     la minification des scripts JS, CSS et des images,
+     l'ajout automatique des prefixes CSS pour la compatibilité des navigateurs web,
+     la concaténation des fichiers,
+     et l'utilisation de références CDN Google
+  </p>
+  <p>
+    La gestion de version des librairies JS est réalisée avec Bower.
+    A noter que tout au long du projet la dernière version d'AngularJS
+    et de ReactJS a été utilisée.
+  </p>
+  <p>
+    L'execution de tests automatiques est réalisée avec Karma et Jasmine.
+  </p>
+  <h4>UX & UI.</h4>
+  <p>
+    Au delà des fonctionnalités natives à AngularJS, l'utilisation des modules tel que
+    <i>x-editable</i> et <i>angular-strap</i> (basés sur le framework CSS <i>Bootsrap</i>)
+    améliore l'expérionce de l'utilisateur.
+    A noter ma contribution sur certains des modules utilisés dans l'application.
+  </p>
+  <h4>Test.</h4>
+  <p>
+    Les services, contrôleurs, directives et filters d'AngularJS ont bénéficié de
+    l'écriture de tests unitiares automatiques de non regession.
+  </p>
+  <p>
+    Au travers de ces tests, l'injection de différents jeux de données permet
+    de tester à chaque déploiement l'application de A à Z.
+  </p>
+  <p>
+    L'écriture de tests fonctionnels contrôle plusieurs navigateurs internet et permet
+    de vérifier le comportement de l'application.
+  </p>
+  <p>
+    AngularJS fournit toutes les fonctionnalités nécessaire pour tester correctement
+    l'application. Par exemple, la gestion des requêtes asynchrones avec <i>$httpBackend</i>.
+  </p>
+  <h4>Performance.</h4>
+  <p>
+    En cours de développement, <i>AngularJS Batarang</i> permet de repérer les
+    traitements les plus gourmands en mémoire et donc de les améliorer.
+  </p>
+  <p>
+    Le virtual scroll (implémenté via un module de la communauté) rend les listes
+    longues performantes tout en augmentant la visibilité de l'utilisateur.
+  </p>
+  <p>
+    Pour les listes longues éditables, l'implémentation de <strong><i>ReactJS</i></strong>
+    reste la solutions la plus performante et maintenable.
+  </p>
+  <p>
+    L'utilisation de l'evènement <i>$destroy</i> évite les fuites de mémoire.
+  </p>
+  <p>
+    La transclusion augmente les performances, ainsi que le <i>One-time binding</i>.
+  </p>

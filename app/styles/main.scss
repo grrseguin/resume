@@ -2,7 +2,6 @@
 // endbower
 @import "compass/css3";
 @import "compass/utilities/color/contrast";
-@import "compass/typography/lists/bullets";
 * {
 	font-family: "trebuchet ms", arial, sans-serif;
 }
@@ -152,19 +151,6 @@ md-list-item {
 	.md-list-item-text.cv-fix-last > p{
 		width: 7%;
 		margin-left: 1em;
-	}
-}
-md-content{
-	h5{
-		margin:0.3em 0;
-	}
-	ul{
-		@include no-bullets;
-		margin:0;
-		padding:0 0 0 1em;
-		li{
-			font-size: 0.9em;
-		}
 	}
 }
 .browsehappy {
