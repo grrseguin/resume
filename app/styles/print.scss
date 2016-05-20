@@ -63,11 +63,11 @@
         h4,
         p{
           font-size: 10px;
-          button{
-            display: none;
-          }
         }
       }
+    }
+    button.md-button{
+      display: none;
     }
     md-list-item.md-2-line .md-list-item-text{
       padding: 0;

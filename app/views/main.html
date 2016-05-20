@@ -34,7 +34,7 @@
   </md-toolbar>
   <md-grid-list class="project-skills"
     md-cols-xl="11" md-cols-lg="6" md-cols-md="15" md-cols-sm="2" md-cols-xs="1"
-    md-row-height-xl="6:7" md-row-height-lg="4:5" md-row-height-md="2:3" md-row-height-sm="15:5" md-row-height-xs="11:5"
+    md-row-height-xl="6:8" md-row-height-lg="4:5" md-row-height-md="2:3" md-row-height-sm="15:5" md-row-height-xs="11:5"
     md-gutter-xl="8px" md-gutter-lg="6px" md-gutter-md="3px" md-gutter-sm="3px" md-gutter-xs="3px">
     <md-grid-tile ng-repeat="projectSkill in main.projectSkills" ng-class="projectSkill.class"
       md-colspan-xl="{{projectSkill.mdColspanXl}}" md-colspan-lg="{{projectSkill.mdColspanLg}}" md-colspan-md="{{projectSkill.mdColspanMd}}" md-colspan-sm="{{projectSkill.mdColspanSm}}" md-colspan-xs="{{projectSkill.mdColspanXs}}"
@@ -60,11 +60,11 @@
     </h2>
   </md-toolbar>
   <md-list>
-    <md-list-item class="md-2-line" ng-repeat="job in main.jobs">
+    <md-list-item layout-xs="column" ng-class="{'md-2-line': !job.isFull, 'md-3-line md-long-text': job.isFull}" ng-repeat="job in main.jobs">
       <a ng-href="{{job.link}}" target="_blank">
         <img ng-src="{{job.face}}" class="sticker" alt="{{job.what}}">
       </a>
-      <div layout-xs="column" class="md-list-item-text" layout-padding>
+      <div layout-xs="column" class="md-list-item-text" layout-padding ng-if="!job.isFull">
         <h3 layout="row" layout-sm="column" layout-align="space-between">
           <span ng-bind="job.what"></span>
           <span ng-bind="job.who"></span>
@@ -74,7 +74,7 @@
           <span ng-bind="job.when"></span>
         </h4>
       </div>
-      <div class="md-list-item-text" layout-padding>
+      <div class="md-list-item-text" layout-padding ng-if="!job.isFull">
         <p layout="row">
           <span ng-bind="job.notes" flex></span>
           <md-button class="md-icon-button" aria-label="Share" ng-click="job.isFull = !job.isFull" ng-if="job.templateUrl">
@@ -82,7 +82,8 @@
             <md-icon md-svg-icon="images/less.svg" ng-show="job.isFull"></md-icon>
           </md-button>
         </p>
-        <md-content flex ng-include="job.templateUrl" ng-if="job.isFull"></md-content>
+      </div>
+      <div class="md-list-item-text" ng-if="job.isFull" ng-include="job.templateUrl">
       </div>
       <md-divider md-inset ng-if="!$last"></md-divider>
     </md-list-item>
