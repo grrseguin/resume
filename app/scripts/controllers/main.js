@@ -73,6 +73,14 @@ angular.module('cvApp')
             name: 'ReactJS'
           },
           {
+            image: 'images/technic/webpack.png',
+            name: 'Webpack'
+          },
+          {
+            image: 'images/technic/babel.jpg',
+            name: 'Babel'
+          },
+          {
             image: 'images/technic/lodash.jpeg',
             name: 'Lodash'
           }
