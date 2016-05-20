@@ -60,7 +60,7 @@
     </h2>
   </md-toolbar>
   <md-list>
-    <md-list-item layout-xs="column" ng-class="{'md-2-line': !job.isFull, 'md-3-line md-long-text': job.isFull}" ng-repeat="job in main.jobs">
+    <md-list-item ng-class="{'md-2-line': !job.isFull, 'md-3-line md-long-text': job.isFull}" ng-repeat="job in main.jobs">
       <a ng-href="{{job.link}}" target="_blank">
         <img ng-src="{{job.face}}" class="sticker" alt="{{job.what}}">
       </a>

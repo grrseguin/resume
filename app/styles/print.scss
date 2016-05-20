@@ -38,6 +38,11 @@
             margin: 0;
             padding: 0;
           }
+          .md-list-item-text{
+            p{
+            font-size: 12px;
+            }
+          }
         }
       }
     }
@@ -75,6 +80,9 @@
         margin: 0;
 	      padding: 0;
       }
+    }
+    md-list-item.md-3-line.md-long-text{
+      margin: 0;
     }
   }
   .layout-margin,
