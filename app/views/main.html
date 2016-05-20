@@ -60,11 +60,11 @@
     </h2>
   </md-toolbar>
   <md-list>
-    <md-list-item layout-xs="column" class="md-2-line" ng-repeat="job in main.jobs">
+    <md-list-item layout-xs="column" ng-class="{'md-2-line': !job.isFull, 'md-3-line md-long-text': job.isFull}" ng-repeat="job in main.jobs">
       <a ng-href="{{job.link}}" target="_blank">
         <img ng-src="{{job.face}}" class="sticker" alt="{{job.what}}">
       </a>
-      <div layout-xs="column" class="md-list-item-text" layout-padding>
+      <div layout-xs="column" class="md-list-item-text" layout-padding ng-if="!job.isFull">
         <h3 layout="row" layout-sm="column" layout-xs="column" layout-align="space-between">
           <span ng-bind="job.what"></span>
           <span ng-bind="job.who"></span>
@@ -74,7 +74,7 @@
           <span ng-bind="job.when"></span>
         </h4>
       </div>
-      <div class="md-list-item-text" layout-padding>
+      <div class="md-list-item-text" layout-padding ng-if="!job.isFull">
         <p layout="row">
           <span ng-bind="job.notes" flex></span>
           <md-button class="md-icon-button" aria-label="Share" ng-click="job.isFull = !job.isFull" ng-if="job.templateUrl">
@@ -82,7 +82,8 @@
             <md-icon md-svg-icon="images/less.svg" ng-show="job.isFull"></md-icon>
           </md-button>
         </p>
-        <md-content flex ng-include="job.templateUrl" ng-if="job.isFull"></md-content>
+      </div>
+      <div class="md-list-item-text" ng-if="job.isFull" ng-include="job.templateUrl">
       </div>
       <md-divider md-inset ng-if="!$last"></md-divider>
     </md-list-item>
