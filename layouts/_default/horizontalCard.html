@@ -1,0 +1,75 @@
+<div class="card mb-3{{ if .Params.noPrint }} d-print-none{{ end }}">
+  <div class="row no-gutters">
+    <div class="col-sm-2 p-3">
+      {{ with .Resources.ByType "image" }}
+        {{ $projectImg := index . 0 }}
+        {{ $projectImgLowQuality := $projectImg.Resize "146x" }}
+        <img
+          class="card-img lazyload"
+          src="{{ $projectImgLowQuality.RelPermalink }}"
+          data-src="{{ $projectImg.RelPermalink }}"
+          alt=""
+        />
+      {{ end }}
+    </div>
+    <div class="col-sm-10">
+      <div class="card-body">
+        <div class="card-title row">
+          <h4 class="mb-1 col-sm-6">
+              {{ .Title }}
+              {{ if isset .Params "link" }}
+              <i class="fas fa-link d-none d-print-inline"></i>
+              {{ end }}
+            </h4>
+            {{ if eq .Site.Language.Lang "en" }}
+            <small class="col-sm-6 text-right text-muted">{{ dateFormat "January 2006" .Params.startdate  }} / {{ dateFormat "January 2006" .Date }}</small>
+            {{ else }}
+            <small class="col-sm-6 text-right text-muted">{{ index $.Site.Data.mois (printf "%d" (.Params.startdate | time).Month) }} {{ (.Params.startdate | time).Year }} / {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}</small>
+            {{ end }}
+        </div>
+        <p class="row">
+          <em class="col-sm-6">{{ .Params.job }}</em>
+          <span class="col-sm-6 text-right">
+            {{ range .Param "tags" }}
+              <span class="badge badge-primary badge-pill">{{ . }}</span>
+            {{ end }}
+          </span>
+        </p>
+        <div class="row">
+          <div class="col-sm-9">
+            <div
+              id="multiCollapseSummary{{ .File.UniqueID }}"
+              class="collapse fade{{if not .Params.IsExpanded}} show{{end}} multiCollapse{{ .File.UniqueID }}"
+            >
+              {{ .Summary }}
+            </div>
+            <div
+              id="multiCollapseContent{{ .File.UniqueID }}"
+              class="collapse fade{{if .Params.IsExpanded}} show{{end}} multiCollapse{{ .File.UniqueID }}"
+            >
+              {{ .Content }}
+            </div>
+          </div>
+          <div class="col-sm-3 text-right">
+            <button
+              type="button"
+              class="btn btn-outline-primary d-print-none"
+              data-toggle="collapse"
+              data-target=".multiCollapse{{ .File.UniqueID }}"
+              aria-expanded="false"
+              aria-controls="multiCollapseSummary{{ .File.UniqueID }} multiCollapseContent{{ .File.UniqueID }}"
+              data-value="{{ i18n "show-more-info" }}"
+              data-alt-value="{{ i18n "show-less-info" }}"
+            >
+              {{ if .Params.IsExpanded }}
+                {{ i18n "show-less-info" }}
+              {{ else }}
+                {{ i18n "show-more-info" }}
+              {{ end }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

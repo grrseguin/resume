@@ -1,0 +1,69 @@
+{{ $author := index $.Site.Data.authors "guillaume" }}
+<footer class="py-2 text-white bg-gradient-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 text-center text-sm-left">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            {{ $avatar := resources.Get $author.avatar.path }}
+            {{ $avatarLowQuality := $avatar.Resize "60x" }}
+            <img
+              class="img-thumbnail lazyload"
+              src="{{ $avatarLowQuality.RelPermalink }}"
+              data-src="{{ $avatar.RelPermalink }}"
+              alt="{{ $author.avatar.title }}"
+              width="{{ $avatarLowQuality.Width }}"
+              height="{{ $avatarLowQuality.Height }}"
+            />
+          </div>
+          <div class="col-sm-6">
+            <ul class="list-inline d-inline mb-0">
+            {{ range .Page.AllTranslations }}
+              <li class="list-inline-item">
+                {{/* Use `flag-icon-css` node package to add new flag */}}
+                {{ $flag := resources.Get (printf "images/flag-icon-css/%s.svg" .Language.Lang) }}
+                <a class="text-white px-2 py-3" href="{{ .Permalink }}">
+                  <img src="{{ $flag.RelPermalink }}" alt="{{ .Language.LanguageName }}" height="48" width="36">
+                </a>
+              </li>
+            {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 order-sm-2 text-center text-sm-right">
+        <div class="row">
+          <div class="col">
+            <span class="grr-list-inline-label">{{ i18n "follow-me-on" }}</span>
+            <ul class="list-inline d-inline mb-0">
+                {{ range $author.socialNetworks  }}
+              <li class="list-inline-item">
+                <a class="text-white px-2 py-3" aria-label="{{ .label }}" href="{{ .link }}" target="_blank" rel="noopener">
+                  <i class="fab fa-2x {{ .fontawesomeKey }}"></i>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-sm-2">
+          <div class="col">
+              <p class="d-none d-print-block">{{ .Page.Permalink }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 order-sm-1 text-center">
+        <div class="row">
+          <div class="col">
+            {{ i18n "made-with" }} <i class="fas fa-heart grr-footer-heart-color"></i> {{ i18n "by" }} {{ $author.username }}
+          </div>
+        </div>
+        <div class="row mt-sm-2">
+          <div class="col">
+            <small>Copyright &copy; {{ now.Format "2006"}} {{ $author.fullName }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

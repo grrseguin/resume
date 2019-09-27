@@ -1,0 +1,29 @@
+/**
+ *
+ * # Override Bootstrap variables
+ *
+ * > Colors were picked from http://bada55.io
+*/
+// stylelint-disable scss/dollar-variable-default
+$primary: #1a5e25;
+$secondary: #606060;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "javascript": #a90110,
+    "html-css": #70530a,
+    "cvs": #639,
+    "system": #026410,
+    "php": #0e5f81,
+    "tracking": #2c5d72,
+    "deployment": #7e2202,
+    "test": #b00d17,
+    "coding": #60d,
+    "design": #a32a05,
+  ),
+);
+
+$print-page-size: a4;

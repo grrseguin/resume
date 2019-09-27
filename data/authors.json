@@ -1,0 +1,28 @@
+{
+  "guillaume": {
+    "avatar": {
+      "path": "images/avatar.jpg",
+      "title": "Avatar"
+    },
+    "fullName": "Guillaume Seguin",
+    "photo": "images/guillaume-seguin.jpg",
+    "position": "Software engineer",
+    "birthday": "1977-08-05 23:10:00",
+    "firstJobDate": "2007-03-01 08:00:00",
+    "phone": "+33 6 87 03 61 54",
+    "email": "grrseguin@gmail.com",
+    "socialNetworks": [
+      {
+        "label": "Github",
+        "link": "https://github.com/grrseguin",
+        "fontawesomeKey": "fa-github"
+      },
+      {
+        "label": "Linkedin",
+        "link": "https://www.linkedin.com/in/grrseguin",
+        "fontawesomeKey": "fa-linkedin"
+      }
+    ],
+    "username": "grrseguin"
+  }
+}

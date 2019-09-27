@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    <title>
+      {{ block "title" . }}
+      {{ .Site.Title }}
+      {{ end }}
+    </title>
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.PostCSS (dict "config" "./" "noMap" true) | resources.Minify | resources.Fingerprint "sha512" }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column grr-main-fill-window">
+    {{ partial "header" . }}
+    <main class="container d-flex flex-column flex-fill">
+      {{ block "main" . }}
+          No block main found
+      {{ end }}
+    </main>
+    {{ partial "footer" . }}
+    {{ $lazysizes := resources.Get "js/lazysizes/lazysizes-umd.js" | resources.Minify | resources.Fingerprint "sha512" }}
+    <script async src="{{ $lazysizes.RelPermalink }}" integrity="{{ $lazysizes.Data.Integrity }}"></script>
+    {{ $jquery := resources.Get "js/jquery.slim.js" }}
+    {{ $popper := resources.Get "js/popper.js" }}
+    {{ $bootstrapVendors := slice $jquery $popper | resources.Concat "js/bootstrap-vendors.js" }}
+    {{ $secureBootstrapVendors := $bootstrapVendors | resources.Minify | resources.Fingerprint "sha512" }}
+    <script src="{{ $secureBootstrapVendors.RelPermalink }}" integrity="{{ $secureBootstrapVendors.Data.Integrity }}"></script>
+    {{ $bootstrapUtil := resources.Get "js/bootstrap/util.js" }}
+    {{ $bootstrapCollapse := resources.Get "js/bootstrap/collapse.js" }}
+    {{ $bootstrapTooltip := resources.Get "js/bootstrap/tooltip.js" }}
+    {{ $grrseguin := resources.Get "js/grrseguin.js" }}
+    {{ $js := slice $bootstrapUtil $bootstrapTooltip $bootstrapCollapse $grrseguin  | resources.Concat "js/bundle.js" }}
+    {{ $secureJS := $js | resources.Minify | resources.Fingerprint "sha512" }}
+    <script async src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+    {{ partial "google_analytics_async" . }}
+</body>
+</html>

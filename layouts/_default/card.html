@@ -1,0 +1,11 @@
+{{ $title := anchorize (index (split .File.Dir "/") 1) }}
+<div class="card border-{{ $title }}">
+    <h4 class="card-header text-white border-{{ $title }} bg-{{ $title }}">
+      {{ .Title }}
+    </h4>
+    <div class="card-body grr-card-body-inline">
+      {{ range .RegularPages }}
+        {{ .Render "chip"}}
+      {{ end }}
+    </div>
+  </div>

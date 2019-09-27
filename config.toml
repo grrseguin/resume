@@ -1,0 +1,36 @@
+baseURL = "https://grrseguin.github.io"
+title = "Guillaume Seguin's resume"
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
+enableemoji = true
+enableRobotsTXT = true
+
+googleAnalytics = "UA-71846357-1"
+
+[sitemap]
+  changefreq = "yearly"
+  filename = "sitemap.xml"
+  priority = 1.0
+
+[params]
+  description = "Guillaume Seguin's resume, software engineer working with love on Javascript technologies: NodeJS, ReactJS"
+  images = ["images/guillaume-seguin-seo.jpg"]
+
+[languages]
+  [languages.en]
+    languageName = "English"
+	  weight = 1
+  [languages.fr]
+    languageName = "Français"
+	  weight = 2
+    title = "Curriculum vitae de Guillaume Seguin"
+    [languages.fr.params]
+      description = "Curriculum vitae de Guillaume Seguin, ingénieur logiciel passionné de technologies Javascript: NodeJS, ReactJS"
+
+[permalinks]
+  graduation = "/"
+  project = "/"
+  technology = "/"
+  web-project-skill = "/"
+
+[imaging]
+  quality = 50

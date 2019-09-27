@@ -1,0 +1,70 @@
+// Header
+@include bg-gradient-variant(".bg-gradient-secondary", theme-color("secondary"));
+
+.grr-header-icon-size {
+  font-size: $small-font-size;
+}
+
+.grr-header-text-verticalalign {
+  display: flex;
+  align-items: center;
+}
+
+.grr-header-primary-wave {
+  @include clip-path-wave();
+}
+
+.grr-main-fill-window {
+  min-height: 100vh;
+}
+
+.grr-card-body-inline {
+  display: flex;
+  flex: 1 0 0%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.grr-chip {
+  display: flex;
+  flex: 1 0 0%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+// Markdown
+// todo better: can I use ::marker (https://www.w3.org/TR/css-lists-3/#marker-pseudo)
+.grr-main-list-bullet {
+  & ul {
+    list-style: none;
+
+    & > li::before {
+      padding-right: $list-inline-padding;
+      font-weight: 900;
+      color: $primary;
+      content: "•";
+    }
+  }
+}
+
+// Footer
+.grr-footer-heart-color {
+  color: color("red");
+}
+
+.grr-list-inline-label {
+  margin-right: $list-inline-padding;
+}
+
+// Responsive alignment
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    // todo: add a pull request to Bootstrap project
+    .grr-text#{$infix}-nowrap   { white-space: nowrap; }
+  }
+}

@@ -1,0 +1,6 @@
+
+User-agent: *
+
+{{range .Site.Sections}}
+Disallow: {{.RelPermalink}}
+{{end}}

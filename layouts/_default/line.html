@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-6">
+    {{ .Content }}
+  </div>
+  <div class="col-sm-6">
+    <div class="row text-right">
+      <div class="col-sm-6">
+        <small>{{ .Params.location }}</small>
+      </div>
+      <div class="col-sm-6">
+        <small class="text-muted">{{ (.Params.startdate | time).Year }} - {{ .Date.Year }}</small>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+[photography-of]
+other = "{{ .fullName }}'s photography"
+
+[years-old]
+other = " years old"
+
+[weekly-futsal]
+other = "Weekly futsal"
+
+[swimming-once-a-week-or-more]
+other = "Swimming once a week at least"
+
+[guitar-or-piano-occasionally]
+other = "Guitar or piano occasionally"
+
+[experience]
+other = " years of experience"
+
+[show-more-info]
+other = "Show more info"
+
+[show-less-info]
+other = "Show less info"
+
+[follow-me-on]
+other = "Follow me on"
+
+[made-with]
+other = "Made with"
+
+[by]
+other = "by"

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="row">
+  <div class="col grr-main-list-bullet">
+    {{ range .Site.Sections.ByWeight }}
+    <div class="card my-3 border-0">
+      <h3 class="card-header grr-header-primary-wave text-primary">
+        <span>{{ .Title }}</span>
+      </h3>
+      <div class="card-body">
+        {{ .Render .Params.render }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

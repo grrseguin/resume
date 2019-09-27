@@ -1,0 +1,77 @@
+{{ $author := index $.Site.Data.authors "guillaume" }}
+<header class="text-white bg-gradient-secondary">
+  <div class="container">
+    <div class="row text-center align-items-center">
+      <div class="col">
+        <div class="row justify-content-center align-items-center">
+          <h1 class="col-sm-6 m-0">{{ $author.fullName }}</h1>
+          <h2 class="col-sm-6 m-0">{{ i18n $author.position | default $author.position }}</h2>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="list-inline d-sm-flex justify-content-sm-between text-center">
+              <li class="list-inline-item text-center">
+                <i class="fas fa-flag"></i>
+                <span>
+                    {{ (mul 60 60 | mul 24 | mul 365) | div (now.Sub (time $author.firstJobDate)).Seconds | math.Floor  }}
+                    {{ i18n "experience" }}
+                </span>
+              </li>
+              <li class="list-inline-item text-center">
+                <i class="fas fa-phone"></i>
+                <a href="tel:{{ replace $author.phone " " "" }}">
+                  <span>{{ $author.phone }}</span>
+                </a>
+              </li>
+              <li class="list-inline-item text-center">
+                <i class="fas fa-at"></i>
+                <a href="mailto:{{ $author.email }}">
+                  <span>{{ $author.email }}</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <i class="fas fa-birthday-cake"></i>
+                <span>
+                    {{ (mul 60 60 | mul 24 | mul 365) | div (now.Sub (time $author.birthday)).Seconds | math.Floor  }}
+                    {{ i18n "years-old" }}
+                </span>
+              </li>
+              <li class="list-inline-item text-right">
+                <i
+                  class="fas fa-futbol grr-header-icon-size m-1"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="{{ i18n "weekly-futsal" }}"
+                ></i>
+                <i
+                  class="fas fa-swimmer grr-header-icon-size m-1"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="{{ i18n "swimming-once-a-week-or-more" }}"
+                ></i>
+                <i
+                  class="fas fa-guitar grr-header-icon-size m-1"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="{{ i18n "guitar-or-piano-occasionally" }}"
+                ></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 text-center text-sm-right">
+          {{ $photo := resources.Get $author.photo }}
+          {{ $photoLowQuality := $photo.Resize "80x" }}
+          <img
+            src="{{ $photoLowQuality.RelPermalink }}"
+            data-src="{{ $photo.RelPermalink }}"
+            alt="{{ i18n "photography-of" $author }}"
+            class="img-thumbnail m-2 lazyload"
+            width="{{ $photoLowQuality.Width }}"
+            height="{{ $photoLowQuality.Height }}"
+          />
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,11 @@
+{{ define "main"}}
+<div class="row flex-fill align-items-center">
+  <div class="col text-center">
+    <h3 class="display-1">
+      404
+    </h3>
+    <h4>Sorry, the page you were looking for doesn't exist</h4>
+    <a href="{{ "/" | relURL }}">Go to {{ .Site.Title }}</a>
+  </div>
+</div>
+{{ end }}

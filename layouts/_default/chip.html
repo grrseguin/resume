@@ -1,0 +1,12 @@
+{{ $title := anchorize (index (split .Parent.File.Dir "/") 1) }}
+<div class="grr-chip m-1">
+  {{ with .Resources.ByType "image" }}
+    {{ $chipImg := index . 0 }}
+    <img class="border rounded-left border-{{ $title }} grr-chip-img-croped" src="{{ $chipImg.RelPermalink }}" alt="" />
+  {{ end }}
+  <h5
+    class="grr-header-text-verticalalign text-center grr-text-xl-nowrap text-white {{ if .Resources.ByType "image" }}rounded-right{{ else }}rounded{{ end }} bg-{{ $title }} m-0 px-1 grr-chip-text-smallprint"
+  >
+    {{ .Title }}
+  </h5>
+</div>

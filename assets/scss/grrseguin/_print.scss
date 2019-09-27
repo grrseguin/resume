@@ -1,0 +1,95 @@
+// stylelint-disable declaration-no-important, selector-no-qualifying-type
+
+@if $enable-print-styles {
+  $print-font-size-base:              (1rem / 2) !default;
+  $print-h1-font-size:                $print-font-size-base * 2.5 !default;
+  $print-h2-font-size:                $print-font-size-base * 2 !default;
+  $print-h3-font-size:                $print-font-size-base * 1.75 !default;
+  $print-h4-font-size:                $print-font-size-base * 1.5 !default;
+  $print-h5-font-size:                $print-font-size-base * 1.25 !default;
+  $print-h6-font-size:                $print-font-size-base !default;
+  @media print {
+    // header {
+    //   position: fixed;
+    //   top: 0;
+    //   right: 0;
+    //   left: 0;
+    //   z-index: $zindex-fixed;
+
+    //   & + * {
+    //     margin-top: 6rem;
+    //   }
+    // }
+
+    main {
+      @include font-size($print-font-size-base);
+      // height: 100vh;
+    }
+
+    footer {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: $zindex-fixed;
+    }
+
+    h1,
+    .h1 { @include font-size($print-h1-font-size); }
+    h2,
+    .h2 { @include font-size($print-h2-font-size); }
+    h3,
+    .h3 { @include font-size($print-h3-font-size); }
+    h4,
+    .h4 { @include font-size($print-h4-font-size); }
+    h5,
+    .h5 { @include font-size($print-h5-font-size); }
+    h6,
+    .h6 { @include font-size($print-h6-font-size); }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      &:not(.btn) {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    em {
+      font-style: normal;
+      text-decoration: underline;
+    }
+
+    .grr-chip-img-croped{
+      object-fit: cover;
+      width: 10px;
+      height: 10px;
+    }
+
+    .grr-chip-text-smallprint {
+      @include font-size($print-h5-font-size / 2);
+      @include text-truncate();
+    }
+
+    .card {
+      margin-top: (1 / 10 ) + rem !important;
+      margin-bottom: (1 / 10 ) + rem !important;
+
+      & .card-header{
+        padding: ($card-spacer-y / 4) ($card-spacer-x / 4);
+      }
+      & .card-body {
+        padding: $card-spacer-x / 4;
+
+        // Allow to expand the first project
+        .card-img {
+          width: auto;
+          max-height: 45px;
+        }
+      }
+    }
+  }
+}

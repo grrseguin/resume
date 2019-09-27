@@ -1,0 +1,22 @@
+language: node_js
+before_install:
+- wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.deb
+- sudo dpkg -i hugo*.deb
+script:
+- hugo
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GITHUB_TOKEN"
+  local-dir: public
+  repo: grrseguin/grrseguin.github.io
+  target_branch: master
+  on:
+    branch: master
+env:
+  global:
+    secure: XRrsBB+00NFuOUQcDVa60z4o0I2gXK/lulNXAvdPyXFMvAWf4RRn2GC3PceKoK8zk8nOUiBxFytD+cWsakkRfQSBkNCM5U+Ui8yil2QHZHx4N7wv+78pbvx8SdHMKkRx1uoTxcm97TcY3yOXVqZmbLTwvQOQ6cPknavwvkXGOpmTVnP1NNAQir7OYBIi1qmuz8vmnyxh4zjiY4/+OL9bW7a/v19eRVJwI4uNybuOWwIyvf4TJIUK1JBcq4sEWSHuTRNEzwZW7ImenYhH5ivFErAH2Hx8bHNi0pHvFdZ4nBsXP3Zk6uxymsYb8SDJfp7Dbq+u9pMeDg2kC5S0vE4rd99pwAipCyDiv9UosxkYZgSt9QLvn2cpWgP8zElGkftAurT3zJNjWJqf80SmwGUVUgeKNC2/ZrPoOB/rJ7XoXO7VjDq/njAyMKJyCvgDJ06fBALdwcjSMLfsQ1f3tyAZYWm2n/5BAyCFrDTJa88Y/eF6NpJ9Ij21xx2GRSi5UDCQ8tVGd1VgS/F/v7twk3qJYeKwZuf5krgPmpyTuWIVTvrQJD0egc8C986lnJxQ9Y/Sm/uQ2098QouoJlNf6iEN+s0rioIEou+gb246aii8j3ERzlR3eVGMo2TvJR6yxbL70WS17TPSfRo3mMOzdVHGPu80trUfweOxejs2Uuxh/zc=
+notifications:
+  email: false
+  slack:
+    secure: ahy5zaYVyZ6fg6Iquqn1Vsqqid1RCtr2WFLiyr0MYRAcmDc3Iq/5XvdLQ9EnI76S/XhkfXNrmtnx1pvLUHt2amRpHOClkRxxXw3IZ8b8g9RUCaYAaB+sxpZZ6RMddtSdvkT8YzxNEKvJ8g2DPk70gM5nNsSP0S1T174XzVZ0cqdK7tpj+KDILybJB8rUAXsa9rzuV+GlEKp6M4JwF44GmXoJFefVYk/ej+sL4VpWzK80bpQDx9Tzf70v3yLmw6MpWv2wYTU3vTB6C7J7NnZmkAO8ViL1ewVMbjssysTH/IWpBw4rtH4j89ZZQ9jVcL77u1350MHqztzr3p7pVAjp4yZuey4bYS6u/8yWI0MHPS5U9XufcO1UVhO3b4jtkz9Z75pgfDfYIaR7VBeogVbrGxe3zK6LkdB7h+k/wBxb8pvWKJr+gkI3DnXWj2or5G/Oi3oudZN2jrUgQbzxGmkQcwPK/c0F5R9u1eEXJLhDQK1PvQD+sDwEILVDEn+0OyEFR/VKkasblFmnv8bdoIsUq7Qtew/l6mb76WtAkQbM9ZalkYhLsLSah0wYa7neWs1iOvL2O1GwI+BG3YN3rdfR+LtX80ySssL/fi8PaSsMFgW5Pe07cJuBwmENj7hoyYxtnMeWt/zcPiL9wWV6Fy+tG96RFtW1AtXNC5pue1msB0E=

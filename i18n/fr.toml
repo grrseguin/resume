@@ -1,0 +1,35 @@
+[photography-of]
+other = "Photographie de {{ .fullName }}"
+
+["Software engineer"]
+other = "Ingénieur logiciel"
+
+[years-old]
+other = " ans"
+
+[weekly-futsal]
+other = "Futsal chaque semaine"
+
+[swimming-once-a-week-or-more]
+other = "Natation au moins une fois par semaine"
+
+[guitar-or-piano-occasionally]
+other = "Guitare ou piano occasionnellement"
+
+[experience]
+other = " années d'expérience"
+
+[show-more-info]
+other = "En savoir plus"
+
+[show-less-info]
+other = "Voir le résumé"
+
+[follow-me-on]
+other = "Suivez-moi sur"
+
+[made-with]
+other = "Fait avec"
+
+[by]
+other = "par"
