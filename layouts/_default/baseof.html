@@ -17,6 +17,13 @@
 </head>
 <body class="d-flex flex-column grr-main-fill-window">
     {{ partial "header" . }}
+    {{ if .Content }}
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        {{ .Content }}
+      </div>
+    </div>
+    {{ end }}
     <main class="container d-flex flex-column flex-fill">
       {{ block "main" . }}
           No block main found
