@@ -39,4 +39,4 @@ Corporate projects
 
 - Add a project to handle email signatures for my teammates and I
 - Add some static websites (`Jekyll` & `bootstrap`)
-- Alerting about the health of our IoT farm or LPWAN providers (`Slack`, `hubot`)
+- Alerting about the health of our IoT farm or LPWAN providers (`Slack`, `hubot`, `redis`)
